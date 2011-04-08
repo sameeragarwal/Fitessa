@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>JSN ImageShow</name>
+	<version>2.3.4</version>
+	<creationDate>December 2009</creationDate>
+	<copyright>Copyright (c) 2006 - 2009 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<description>JSN IMAGESHOW MODULE</description>
+	<files>
+		<filename module="mod_imageshow">mod_imageshow.php</filename>
+        <filename>index.html</filename>
+		<filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/style.css</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/icon-warning.png</filename>
+		<filename>assets/images/selector-arrow.png</filename>
+		<filename>assets/js/index.html</filename>
+		<filename>assets/js/jsnis_module.js</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_imageshow.ini</language>
+		<language tag="de-DE">de-DE.mod_imageshow.ini</language>
+	</languages>
+	<params addpath="/administrator/components/com_imageshow/elements">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="@sp1" type="spacer" default="======== REQUIRED PARAMETERS ========" label="" description="" />
+		<param name="showlist_id" type="jsnshowlist" section="com_imageshow" default="0" label="SHOWLIST" description="SHOWLIST DESC" />
+		<param name="showcase_id" type="jsnshowcase" section="com_imageshow" default="0" label="SHOWCASE" description="SHOWCASE DESC" />
+		<param name="@sp2" type="spacer" default="======== OPTIONAL PARAMETERS ========" label="" description="" />
+		<param name="width" type="text" default="" label="OVERALL WIDTH" description="OVERALL WIDTH DESC" />
+		<param name="height" type="text" default="" label="OVERALL HEIGHT" description="OVERALL HEIGHT DESC" />
+	</params>	
+</install>

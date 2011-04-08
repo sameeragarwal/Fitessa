@@ -1,0 +1,45 @@
+#jsn-showlist-icon-warning,
+#jsn-showcase-icon-warning {
+	position: relative;
+	float: left;
+}
+.jsn-select-value {
+	float: left;
+	width: 120px;
+}
+.jsn-icon-warning {
+	background: url(../images/icon-warning.png) left center no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	display: block;
+	margin-left: 5px;
+}
+.jsn-tooltip-wrap {
+	display: none;
+}
+.jsn-tooltip-title {
+	font-weight: bold;
+	margin: 0px 0px 5px 0px;
+}
+.jsn-icon-warning:hover .jsn-tooltip-wrap {
+	position: absolute;
+	background: #FFFFCC;
+	border: 1px solid #D7D7AC;
+	display: block;
+	margin-left: 12px;
+	padding: 5px;
+	top: 22px;
+	width: 200px;
+	z-index: 6666;
+}
+.jsn-tooltip-anchor {
+	background: url(../images/selector-arrow.png) 13px 9px no-repeat;
+    display: block;
+    height: 48px;
+    left: -4px;
+    position: absolute;
+    top: -19px;
+    width: 45px;
+    z-index: 6666;
+}

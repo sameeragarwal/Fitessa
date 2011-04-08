@@ -1,0 +1,298 @@
+/**
+ * @author JoomlaShine.com Team
+ * @copyright JoomlaShine.com
+ * @link joomlashine.com
+ * @package JSN ImageShow
+ * @version 2.0
+ * @license GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+ */
+#treeview {
+	padding: 10px;
+	width: 190px;
+	overflow: auto;
+	/*height: 390px;*/
+	border: 0;
+}
+
+#folderview .path {
+	margin-bottom: 10px;
+}
+
+#folderview .view {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 360px;
+}
+
+#folderview input#folderpath {
+	width: 65%;
+	background-color: #EEE;
+}
+
+#folderview input#foldername {
+	width: 20%;
+}
+
+#folderview iframe#folderframe {
+	height: 100%;
+}
+
+#uploads .upload {
+	padding: 4px;
+}
+
+/**
+ * Upload Widget CSS
+ */
+.upload-queue {
+	list-style: none;
+}
+
+.upload-queue li {
+	background: url(upload.png) no-repeat 0 5px;
+	padding: 5px 0 5px 22px;
+}
+
+.upload-queue .queue-file {
+	font-weight: bold;
+}
+
+.upload-queue .queue-size {
+	color: #aaa;
+	margin-left: 1em;
+	font-size: 0.9em;
+}
+
+.upload-queue .queue-loader {
+	position: relative;
+	margin: 3px 15px;
+	font-size: 0.9em;
+	background-color: #ddd;
+	color: #fff;
+	border: 1px inset #ddd;
+}
+
+.upload-queue .queue-subloader {
+	text-align: center;
+	position: absolute;
+	background-color: #81B466;
+	height: 100%;
+	width: 0%;
+	left: 0;
+	top: 0;
+}
+
+.upload-queue .input-delete {
+	width: 16px;
+	height: 16px;
+	background: url(delete.png) no-repeat 0 0;
+	text-decoration: none;
+	border: none;
+	float: right;
+}
+
+/********** Main Navigator **********/
+.title {
+	font-weight: bold;
+}
+
+.jsn-toolbar-images-sub-menu {
+	background: #E1E1E1;
+	height: 30px;
+	margin-bottom: 1px;
+}
+
+.jsn-toolbar-images-sub-menu ul {
+	list-style: none;
+	line-height: 30px;
+}
+.jsn-toolbar-images-sub-menu ul a.load {
+	color: #0B55C4;
+	text-decoration: underline;
+}
+.jsn-toolbar-images-sub-menu ul a.load:hover {
+	text-decoration: none;
+}
+/*Giang them  12/10 */
+.jsn-toolbar-left {
+	float: left;
+	padding-left: 5px;
+}
+
+.jsn-toolbar-left li {
+	float: left;
+	margin: 0 5px;
+}
+.jsn-toolbar-left #separate {
+	margin: 0;
+	color: #999;
+}
+.jsn-pathway {
+	float: left;
+}
+
+table.treeview td.treemenu {
+	border-right: 1px solid #CCCCCC;
+	background: #F4F4F4;
+}
+
+table.treeview > tbody > tr > td {
+	padding: 0;
+}
+
+#media-tree_tree {
+	margin: 0 5px;
+	padding: 5px 0;
+	position: relative;
+	overflow: auto;
+	height: 455px;
+}
+
+#media-tree_tree .mooTree_node {
+	font-size: 11px;
+	cursor: pointer;
+}
+
+#media-tree_tree .mooTree_text a {
+	color: #000;
+}
+
+#media-tree_tree .mooTree_text a:hover {
+	text-decoration: none;
+}
+
+.mooTree_selected,
+#media-tree_tree > .mooTree_node {
+	background: none;
+	font-weight: bold;
+}
+
+p.description{
+	color:#999999;
+	text-align:center;
+}
+#jsn-loadpage p {
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	margin-top: 60px;
+}
+
+.jsn-body {
+	border: 1px solid #CCCCCC;
+	
+}
+
+.jsn-source-image-preview iframe {
+	min-height: 560px;
+}
+
+#jsn-viewpanel {
+	margin:0;
+	padding:0;
+	background: #F4F4F4;
+	border-bottom: 1px solid #CCCCCC;
+	height: 26px;
+}
+
+#jsn-viewpanel a {
+	color: #1A73D3;
+	line-height: 26px;
+	border-left: 1px solid #CCCCCC;
+	padding: 0 10px;
+}
+
+#jsn-viewpanel #select-all {
+	border: none;
+}
+
+#jsn-viewpanel ul {
+	margin:0;
+	padding:0;
+	float: left;
+}
+
+#jsn-viewpanel .jsn-navigator-detailview {
+	margin:0;
+	padding:0;
+	float: left;
+}
+#jsn-viewpanel .jsn-navigator-select {
+	margin:0;
+	padding:0;
+	float: right;
+}
+#jsn-viewpanel .jsn-navigator-detailview a {
+	border: none;
+}
+
+#jsn-viewpanel li{
+	display: inline;
+}
+
+div.loading-visible {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+}
+
+.note {
+	margin: 0 auto;
+	line-height: 17px;
+	padding-top: 2px;
+}
+
+p.action-ed {
+	white-space: nowrap;
+}
+
+p.action-ed a {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding: 0 2px;
+}
+
+p.action-ed a:hover {
+	text-decoration: none;
+}
+
+.image-title {
+	color: #666666;
+	font-weight: bold;
+}
+
+/*
+ * Select original source begin
+ */
+.jsn-source {
+	width: 310px;
+	margin: 0 auto;
+}
+
+.jsn-source fieldset {
+	margin: 20px 0;
+	padding: 5px 15px 0 15px;
+}
+
+.jsn-source fieldset .jsn-source-description {
+	margin: 5px 0;
+}
+
+.jsn-source img {
+	padding-left: 10px;
+}
+
+.jsn-source input {
+	position: relative;
+	border: none;
+	top: -5px;
+}
+
+/*
+ * Select original source End
+ */
+#txtHint.ajax-loading {
+	background: url(../images/header_animated_loading.gif) no-repeat center;
+}

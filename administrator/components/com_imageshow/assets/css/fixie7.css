@@ -1,0 +1,23 @@
+/**
+ * @author JoomlaShine.com Team
+ * @copyright JoomlaShine.com
+ * @link joomlashine.com
+ * @package JSN ImageShow
+ * @version 2.0
+ * @license GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+ */
+table.configuration-flickr input,
+table.configuration-folder input,
+table.configuration-picasa input {
+	width: 97%;
+}
+body {
+	height: 90%;
+}
+div.current dd > table {
+	position: relative;
+	left: -40px;
+}
+#mytabs {
+	padding-bottom: 5px;
+}

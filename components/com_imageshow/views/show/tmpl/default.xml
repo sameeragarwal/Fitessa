@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="IMAGESHOW LAYOUT">
+		<message>
+			<![CDATA[IMAGESHOW LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>IMAGESHOW LAYOUT</name>
+		<description>IMAGESHOW LAYOUT DESC</description>
+		<params addpath="/administrator/components/com_imageshow/elements">			
+			<param name="showlist_id" type="jsnshowlist" section="com_imageshow" default="0" label="Showlist" description="The list showlist" />
+			<param name="showcase_id" type="jsnshowcase" section="com_imageshow" default="0" label="Showcase" description="The list showcase" />
+		</params>
+	</state>
+</metadata>

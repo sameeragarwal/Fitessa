@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>jConnector</name>
+	<creationDate>August 2009</creationDate>
+	<author>Web Scribble Solutions, Inc.</author>
+	<authorEmail>support@webscribble.com</authorEmail>
+	<authorUrl>webscribble.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>GPL</license>
+	<version>1.1</version>
+	<description>jConnector implements Facebook Connect in Joomla!</description>
+
+    <files>
+    	<filename>classes.php</filename>
+    	<filename>extension_detector.php</filename>
+    	<filename module="mod_jconnector">mod_jconnector.php</filename>
+    	<filename>mod_jconnector.xml</filename>
+    	<filename>index.html</filename>
+    	<filename>install.xml</filename>
+    	<filename>jconnector_server.php</filename>
+    	<filename>xd_receiver.htm</filename>
+    	<filename>facebook/footprints/config.php</filename>
+    	<filename>facebook/footprints/index.php</filename>
+    	<filename>facebook/footprints/lib.php</filename>
+    	<filename>facebook/footprints/README</filename>
+    	<filename>facebook/php/facebook.php</filename>
+    	<filename>facebook/php/facebook_desktop.php</filename>
+    	<filename>facebook/php/facebookapi_php5_restlib.php</filename>
+    	<filename>facebook/php/jsonwrapper/jsonwrapper.php</filename>
+    	<filename>facebook/php/jsonwrapper/jsonwrapper_inner.php</filename>
+    	<filename>facebook/php/jsonwrapper/JSON/JSON.php</filename>
+    	<filename>facebook/php/jsonwrapper/JSON/LICENSE</filename>
+    	<filename>tmpl/default.php</filename>
+    	<filename>tmpl/index.html</filename>
+    </files>
+
+</install>

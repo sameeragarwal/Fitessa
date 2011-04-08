@@ -1,0 +1,318 @@
+dl#jsn-showcase-tabs dt {
+	padding: 4px 11px;
+	margin: 0 3px 0 0;
+}
+dl#jsn-showcase-tabs dt.open {
+	background-color: #FFF;
+	border-bottom-color: #FFF;
+	font-weight: bold;
+}
+#adminForm div.current {
+	padding: 8px;
+}
+fieldset {
+	margin: 5px;
+}
+/*----- General Tabs -----*/
+#mytabs {
+	background-color: #F9F9F9;
+	border: 1px solid #CCC;
+	border-bottom: none;
+}
+#mytabs dt {
+	margin-bottom: -1px;
+	float: none;
+	display: inline;
+	padding: 6px 10px;
+}
+#mytabs dt.open {
+	background: #FFF;
+	border-bottom-color: #FFF;
+	font-weight: bold;
+}
+.jsn-preview-showcase {
+	background: #454545;
+	border-bottom: 2px groove #000000;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px;
+	text-align: center;
+	position: relative;
+}
+.jsn-preview-showcase > span {
+	color: #fff;
+	font-size: 12px;
+}
+.jsn-preview-showcase #preview-showcase-link {
+	font-weight: bold;
+	padding: 5px 15px;
+	margin: 0 0 0 5px;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #ccc;
+	cursor: pointer;
+	background: url(../images/bg-button.png);
+}
+/*----- Show case settings -----*/
+#image_title,
+#pattern_title,
+#watermark-title {
+	font-weight: bold;
+	margin: 0;
+	white-space: nowrap;
+}
+#image_title a,
+#pattern_title a,
+#watermark-title a {
+	font-weight: normal;
+}
+#pattern_value,
+#background_value {
+	font-weight: normal;
+}
+table.showcase-details {
+	margin-bottom: 10px;
+	width:100%;
+}
+#mytabs {
+	margin: 0;
+	float: none;
+	padding: 15px 6px 4.8px 6px;
+}
+/*----- Image Panel Tabs -----*/
+#tabs ul#primary {
+	margin: 0 0 -1px 0;
+	list-style-type: none;
+}
+#tabs ul#primary li {
+	float: left;
+}
+#tabs ul#primary a {
+	float: left;
+	padding: 3px 15px;
+	margin-left: 3px;
+	text-decoration: none;
+	color: #333;
+	background: #F0F0F0;
+	border: 1px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
+}
+#tabs ul#primary #fit {
+	background: #fff;
+	font-weight: bold;
+	border-bottom-color: #FFF;
+}
+#tabs ul#primary #fit.inactive {
+	font-weight: normal;
+	background-color: #F0F0F0;
+	border-bottom-color: #DADADA;
+}
+#tabs ul#primary #expand.active {
+	font-weight: bold;
+	background-color: #FFF;
+	border-bottom-color: #FFF;
+}
+#tabs-main {
+	border: 1px solid #DADADA;
+	padding: 5px;
+}
+#imgpanel-bg-input {
+	position: relative;
+	width: 100%;
+}
+#imgpanel-bg-input p {
+	margin: 0;
+}
+#imgpanel-bg-input input {
+	float: left;
+	clear: left;
+	margin: 2px 0;
+	background-color:#ECE9D8;
+}
+#wrap-color a {
+	display: block;
+	white-space: nowrap;
+	margin: 3px 0;
+}
+#images-graphic-watermark input {
+	width: 100%;
+	background-color:#ECE9D8;
+}
+div#wrap-color {
+	position: absolute;
+	left: 57px;
+}
+.image-graphic-preview {
+	margin: 0;
+	padding: 0;
+}
+.image-graphic-preview a {
+	float: left;
+	width: 16px;
+	height: 12px;
+	border-right: 1px solid #CCC;
+	padding-right: 6px;
+}
+.jsn-accordion-control {
+	color: #0b55c4;
+}
+.jsn-accordion-control span {
+	margin: 0;
+	cursor: pointer;
+}
+.jsn-accordion-title {
+	margin: 5px 0px 0px 0px;
+	padding: 5px;
+	background: #F4F4F4;
+	color: #000;
+	border: 1px solid #dfdfdf;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+}
+.jsn-accordion-button {
+	background: url(../images/collapse.png) no-repeat 0 0;
+	width: 10px;
+	height: 10px;
+	float: right;
+	margin: 5px 0px;
+}
+.button-down {
+	background: url(../images/expand.png) no-repeat 0 0;
+	margin: 7px 4px;
+}
+.down {
+	background: url(../images/heading-background.png) repeat 0 0;
+	border: 1px solid #000000;
+	color: #fff;
+}
+#jsn-showcase-theme-wrapper .jsnis-showcase-theme-settings {
+	padding: 10px;
+	margin-top: 15px;
+	border: 1px solid #CCC;
+	background-color: #F9F9F9;
+}
+.jsnis-showcase-theme-detail #jsn-showcase-tabs {
+	margin-top: 0;
+}
+.jsnis-showcase-theme-detail .current {
+	background-color: #FFF;
+}
+.jsnis-showcase-theme-detail .jsn-accordion-pane {
+	margin-top: 3px;
+}
+.jsnis-showcase-theme-detail div.pane-sliders .panel h3.jpane-toggler-down {
+	background: url(../images/heading-background.png);
+	border: 1px solid #000;
+}
+.jsnis-showcase-theme-detail div.pane-sliders .panel h3.jpane-toggler-down span {
+	color: #fff;
+}
+div.jsn-preview-wrapper {
+	background-color: #606060;
+	margin-left: 10px;
+	width: 571px;
+}
+div.jsn-preview-flash {
+	padding: 10px;
+	height: 350px;
+}
+#jsn-preview-hint-text {
+	display: block;
+	width: 24px;
+	position: absolute;
+	right: 6px;
+	top: 11px;
+}
+.jsn-preview-hint-caption {
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+#jsn-preview-hint-text span {
+	display: block;
+	height: 24px;
+	width: 24px;
+	float: right;
+}
+.hint-text-deactive {
+	background: url(../images/showcase-hint-text.png) 1px -1px no-repeat;
+}
+.hint-text-active {
+	background: #1A1A1A url(../images/showcase-hint-text.png) 1px -24px no-repeat;
+	border: 1px solid #353535;
+}
+#jsn-preview-hint-text-content {
+	text-align: left;
+	background-color: #FFFFCC;
+	border: 1px solid #D4D5AA;
+	color: #000000;
+	display: none;
+	font-size: 11px;
+	font-weight: normal;
+	right: 0;
+	list-style: disc inside none;
+	padding: 5px 5px 5px 13px;
+	position: absolute;
+	top: 26px;
+}
+.jsn-preview-showcase #showlist_id {
+	padding: 4px;
+	border: 1px solid #000;
+}
+/*----- PreviewModal -----*/
+#jsn-overlay {
+	visibility: visible;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+	background: #000;
+	z-index: 65555;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+}
+#jsn-windowbox {
+	position: absolute;
+	z-index: 65557;
+	left: -1000px;
+}
+#jsn-flash-preview {
+	margin: 120px 126px;
+}
+#jsn-windowbox-close {
+	background: url(../images/closebox.png) no-repeat left top;
+	border: medium none;
+	height: 30px;
+	position: absolute;
+	right: -16px;
+	top: -16px;
+	width: 30px;
+}
+#jsn-live-view-flash {
+	border: 10px solid #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#jsn-info-bar {
+	background-color: #1B1B1B;
+	color: #666666;
+	text-align: center;
+	padding: 5px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	position: relative;
+}
+#jsn-info-bar-close {
+	cursor: pointer;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}

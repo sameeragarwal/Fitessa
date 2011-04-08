@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="component" method="upgrade">				
+<name>ImageShow</name>
+<version>3.0.0</version>
+<edition>FREE</edition>
+<creationDate>04/06/2011</creationDate>
+<copyright>Copyright (c) 2008 - 2010 - JoomlaShine.com</copyright>
+<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+<author>JoomlaShine.com</author>
+<authorEmail>admin@joomlashine.com</authorEmail>
+<authorUrl>www.joomlashine.com</authorUrl>
+<description>JSN IMAGESHOW COMPONENT</description>  				
+<install>
+<sql>
+<file charset="utf8" driver="mysql">install.mysql.sql</file>
+<file driver="mysql">install.mysql.sql</file>
+</sql>
+</install>
+<uninstall>
+<sql>
+<file charset="utf8" driver="mysql">uninstall.mysql.sql</file>
+<file driver="mysql">uninstall.mysql.sql</file>
+</sql>
+</uninstall>
+<!-- Custom installer -->
+<installfile>install.imageshow.php</installfile>
+<uninstallfile>uninstall.imageshow.php</uninstallfile>  
+<subinstall>
+<extension type="plugin" folder="content" subdir="content_plugin" name="imageshow" publish="true">
+JSN imageshow Plugin
+</extension>
+<extension type="plugin" folder="system" subdir="system_plugin" name="imageshow" publish="true">
+JSN imageshow System Plugin
+</extension>					
+<extension type="module" client="site" subdir="module" name="mod_imageshow">
+JSN imageshow Module
+</extension>        
+</subinstall>
+<!-- Frontend files -->
+<files folder="site">					
+
+<filename>controller.php</filename>
+<filename>imageshow.php</filename>
+<filename>index.html</filename>
+<folder>assets</folder>
+<folder>views</folder>
+
+</files>
+<languages folder="i18n">
+<language tag="en-GB">site/en-GB.com_imageshow.ini</language>
+<language tag="en-GB">site/en-GB.plg_content_imageshow.ini</language>
+<language tag="de-DE">site/de-DE.com_imageshow.ini</language>
+<language tag="de-DE">site/de-DE.plg_content_imageshow.ini</language>	
+<language tag="pl-PL">site/pl-PL.com_imageshow.ini</language>
+<language tag="pl-PL">site/pl-PL.plg_content_imageshow.ini</language>
+</languages>
+<administration>
+<menu img="components/com_imageshow/assets/images/icon-uni-16/icon-main.png">JSN imageshow</menu>
+<submenu>
+<menu img="components/com_imageshow/assets/images/icon-uni-16/icon-launchpad.png">Launch Pad</menu>
+<menu controller="showlist" img="components/com_imageshow/assets/images/icon-uni-16/icon-showlist.png">Showlists</menu>
+<menu controller="showcase" img="components/com_imageshow/assets/images/icon-uni-16/icon-showcase.png">Showcases</menu>
+<menu link="option=com_imageshow&amp;controller=maintenance&amp;type=configs" img="components/com_imageshow/assets/images/icon-uni-16/icon-configuration.png">Configuration &amp; Maintenance</menu>						
+<menu controller="help" img="components/com_imageshow/assets/images/icon-uni-16/icon-help.png">Help &amp; Support</menu>
+<menu controller="about" img="components/com_imageshow/assets/images/icon-uni-16/icon-about.png">About</menu>
+</submenu>					
+<!-- Backend files -->
+<files folder="admin">
+<filename>config.xml</filename>
+<filename>controller.php</filename>
+<filename>db_schema_upgrade.xml</filename>
+<filename>footer.php</filename>
+<filename>gpl-2.0.txt</filename>
+<filename>imageshow.php</filename>
+<filename>index.html</filename>
+<filename>install.mysql.sql</filename>
+<filename>jsn_imageshow_free_3.0.0.checksum</filename>
+<filename>uninstall.mysql.sql</filename>
+<folder>adapters</folder>
+<folder>assets</folder>
+<folder>classes</folder>
+<folder>controllers</folder>
+<folder>elements</folder>
+<folder>help</folder>
+<folder>helpers</folder>
+<folder>languages</folder>
+<folder>libraries</folder>
+<folder>models</folder>
+<folder>subinstall</folder>
+<folder>tables</folder>
+<folder>tips</folder>
+<folder>views</folder>
+
+</files>
+<languages folder="i18n">
+<language tag="en-GB">en-GB.com_imageshow.ini</language>
+<language tag="en-GB">en-GB.com_imageshow.menu.ini</language>
+<language tag="de-DE">de-DE.com_imageshow.ini</language>
+<language tag="de-DE">de-DE.com_imageshow.menu.ini</language>
+<language tag="pl-PL">pl-PL.com_imageshow.ini</language>
+<language tag="pl-PL">pl-PL.com_imageshow.menu.ini</language>
+</languages>
+</administration>
+</install>
+

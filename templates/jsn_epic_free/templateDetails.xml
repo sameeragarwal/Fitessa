@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<install version="1.5" type="template">
+	<name>JSN_Epic_FREE</name>
+	<version>4.0.2</version>
+	<creationDate>December 2010</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>support@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<copyright>Copyright (c) 2008 - 2010 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<folder>admin/</folder>
+		<folder>css/</folder>
+		<folder>elements/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+		<folder>php/</folder>
+		<filename>component.php</filename>
+		<filename>index.php</filename>
+		<filename>jsn_runajax.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>jsn_installsampledata.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>gpl-2.0.txt</filename>
+	</files>
+	<positions>
+		<position>logo</position>
+		<position>top</position>
+		<position>mainmenu</position>
+		<position>toolbar</position>
+		<position>promo-left</position>
+		<position>promo</position>
+		<position>promo-right</position>
+		<position>content-top</position>
+		<position>left-top</position>
+		<position>left-2</position>
+		<position>left</position>
+		<position>left-bottom</position>
+		<position>right-top</position>
+		<position>right</position>
+		<position>right-2</position>
+		<position>right-bottom</position>
+		<position>stickleft</position>
+		<position>stickright</position>
+		<position>innerleft</position>
+		<position>innerright</position>
+		<position>breadcrumbs</position>
+		<position>user-top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>mainbody-top</position>
+		<position>mainbody-bottom</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user-bottom</position>
+		<position>banner</position>
+		<position>content-bottom</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>footer</position>
+		<position>bottom</position>
+		<position>debug</position>
+	</positions>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_jsn_epic_free.ini</language>
+		<language tag="de-DE">de-DE.tpl_jsn_epic_free.ini</language>
+		<language tag="nl-NL">nl-NL.tpl_jsn_epic_free.ini</language>
+		<language tag="pl-PL">pl-PL.tpl_jsn_epic_free.ini</language>
+		<language tag="it-IT">it-IT.tpl_jsn_epic_free.ini</language>
+		<language tag="ru-RU">ru-RU.tpl_jsn_epic_free.ini</language>
+		<language tag="fr-FR">fr-FR.tpl_jsn_epic_free.ini</language>
+		<language tag="es-ES">es-ES.tpl_jsn_epic_free.ini</language>
+		<language tag="hr-HR">hr-HR.tpl_jsn_epic_free.ini</language>
+		<language tag="da-DK">da-DK.tpl_jsn_epic_free.ini</language>
+		<language tag="bg-BG">bg-BG.tpl_jsn_epic_free.ini</language>
+		<language tag="ja-JP">ja-JP.tpl_jsn_epic_free.ini</language>
+	</languages>
+	<administration>
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_jsn_epic_free.ini</language>
+			<language tag="de-DE">de-DE.tpl_jsn_epic_free.ini</language>
+			<language tag="nl-NL">nl-NL.tpl_jsn_epic_free.ini</language>
+			<language tag="pl-PL">pl-PL.tpl_jsn_epic_free.ini</language>
+			<language tag="it-IT">it-IT.tpl_jsn_epic_free.ini</language>
+			<language tag="ru-RU">ru-RU.tpl_jsn_epic_free.ini</language>
+			<language tag="fr-FR">fr-FR.tpl_jsn_epic_free.ini</language>
+			<language tag="es-ES">es-ES.tpl_jsn_epic_free.ini</language>
+			<language tag="hr-HR">hr-HR.tpl_jsn_epic_free.ini</language>
+			<language tag="da-DK">da-DK.tpl_jsn_epic_free.ini</language>
+			<language tag="bg-BG">bg-BG.tpl_jsn_epic_free.ini</language>
+			<language tag="ja-JP">ja-JP.tpl_jsn_epic_free.ini</language>
+		</languages>
+	</administration>
+	<params addpath="/templates/jsn_epic_free/elements">
+		<param type="jsnparams" subtype="jsnpanel" default="ABOUT" label="" description="" position="first"/>
+		<param type="jsnparams" subtype="jsnabout" default="" label="" description="" />
+		<param type="jsnparams" subtype="jsnpanel" default="SAMPLE_DATA" label="" description=""/>
+		<param type="jsnparams" subtype="jsnsampledata" default="" label="SAMPLE_DATA_LBL" description="SAMPLE_DATA_DESC"/>
+		<param type="jsnparams" subtype="jsnpanel" default="LOGO_SETTINGS" label="" description=""/>
+		<param name="logoLink" size="60" type="jsnparams" subtype="jsntext" default="" label="LOGO_LINK" description="LOGO_LINK_DESC"/>
+		<param name="logoSlogan" size="60" type="jsnparams" subtype="jsntext" default="" label="LOGO_SLOGAN" description="LOGO_SLOGAN_DESC"/>
+		<param name="enableColoredLogo" type="jsnparams" subtype="jsnradio" default="0" label="ENABLE_COLORED_LOGO" description="ENABLE_COLORED_LOGO_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="jsnparams" subtype="jsnpanel" default="LAYOUT_SETTINGS" label="" description=""/>
+		<param type="jsnparams" subtype="jsnlabel" default="OVERALL_WIDTH" label="" description=""/>
+		<param name="templateWidth" type="jsnparams" subtype="jsnlist" default="narrow" label="TEMPLATE_WIDTH" description="TEMPLATE_WIDTH_DESC">
+			<option value="narrow">NARROW</option>
+			<option value="wide">WIDE</option>
+			<option value="float">FLOAT</option>
+		</param>
+		<param name="narrowWidth" type="jsnparams" subtype="jsntext" default="960px" label="NARROW_WIDTH" description="NARROW_WIDTH_DESC"/>
+		<param name="wideWidth" type="jsnparams" subtype="jsntext" default="1150px" label="WIDE_WIDTH" description="WIDE_WIDTH_DESC"/>
+		<param name="floatWidth" type="jsnparams" subtype="jsntext" default="90%" label="FLOAT_WIDTH" description="FLOAT_WIDTH_DESC"/>
+		<param type="jsnparams" subtype="jsnlabel" default="COLUMNS_WIDTH" label="" description=""/>
+		<param name="promoLeftWidth" type="jsnparams" subtype="jsntext" default="23" label="PROMO_LEFT_WIDTH" description="PROMO_LEFT_WIDTH_DESC"/>
+		<param name="promoRightWidth" type="jsnparams" subtype="jsntext" default="23" label="PROMO_RIGHT_WIDTH" description="PROMO_RIGHT_WIDTH_DESC"/>
+		<param name="leftWidth" type="jsnparams" subtype="jsntext" default="23" label="LCOL_WIDTH" description="LCOL_WIDTH_DESC"/>
+		<param name="rightWidth" type="jsnparams" subtype="jsntext" default="23" label="RCOL_WIDTH" description="RCOL_WIDTH_DESC"/>
+		<param name="innerleftWidth" type="jsnparams" subtype="jsntext" default="23" label="INNER_LCOL_WIDTH" description="INNER_LCOL_WIDTH_DESC"/>
+		<param name="innerrightWidth" type="jsnparams" subtype="jsntext" default="23" label="INNER_RCOL_WIDTH" description="INNER_RCOL_WIDTH_DESC"/>
+		<param type="jsnparams" subtype="jsnlabel" default="MISC." label="" description=""/>
+		<param name="lspAlignment" type="jsnparams" subtype="jsnlist" default="middle" label="LSP_ALIGNMENT" description="LSP_ALIGNMENT_DESC">
+			<option value="top">TOP</option>
+			<option value="middle">MIDDLE</option>
+			<option value="bottom">BOTTOM</option>
+		</param>
+		<param name="rspAlignment" type="jsnparams" subtype="jsnlist" default="middle" label="RSP_ALIGNMENT" description="RSP_ALIGNMENT_DESC">
+			<option value="top">TOP</option>
+			<option value="middle">MIDDLE</option>
+			<option value="bottom">BOTTOM</option>
+		</param>
+		<param name="showFrontpage" type="jsnparams" subtype="jsnradio" default="1" label="SHOW_FRONTPAGE" description="SHOW_FRONTPAGE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="jsnparams" subtype="jsnpanel" default="STYLE_SETTINGS" label="" description="" altclass="pro"/>
+		<param type="jsnparams" subtype="jsnlabel" default="ONLY_IN_PRO" label="" description=""/>
+		<param name="templateColor" type="jsnparams" subtype="jsnlist" default="red" label="TEMPLATE_COLOR" description="TEMPLATE_COLOR_DESC" disabled="disabled">
+			<option value="orange">ORANGE</option>
+			<option value="red">RED</option>
+			<option value="green">GREEN</option>
+			<option value="violet">VIOLET</option>
+			<option value="orange">ORANGE</option>
+			<option value="grey">GREY</option>
+		</param>
+		<param name="templateTextStyle" type="jsnparams" subtype="jsnlist" default="business" label="TEMPLATE_TEXTSTYLE" description="TEMPLATE_TEXTSTYLE_DESC" disabled="disabled">
+			<option value="business">BUSINESS_CORPORATE_WEBSITE</option>
+			<option value="personal">PERSONAL_BLOG_WEBSITE</option>
+			<option value="news">ONLINE_NEWS_MAGAZINE_WEBSITE</option>
+		</param>
+		<param name="templateTextSize" type="jsnparams" subtype="jsnlist" default="medium" label="TEMPLATE_TEXTSIZE" description="TEMPLATE_TEXTSIZE_DESC" disabled="disabled">
+			<option value="small">SMALL</option>
+			<option value="medium">MEDIUM</option>
+			<option value="big">BIG</option>
+		</param>
+		<param name="templateSpecialFont" type="jsnparams" subtype="jsnradio" default="0" label="TEMPLATE_SPECIALFONT" description="TEMPLATE_SPECIALFONT_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableCSS3Effect" type="jsnparams" subtype="jsnradio" default="0" label="CSS3_EFFECT" description="CSS3_EFFECT_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="jsnparams" subtype="jsnpanel" default="ME_SETTINGS" label="" description="" altclass="pro"/>
+		<param type="jsnparams" subtype="jsnlabel" default="ONLY_IN_PRO" label="" description=""/>
+		<param type="jsnparams" subtype="jsnlabel" default="TOPMENU" label="" description=""/>
+		<param name="topmenuIcons" size="60" type="jsnparams" subtype="jsniconselector" default="home,info,image,download,comment,mail" label="TOPMENU_ICONS" description="TOPMENU_ICONS_DESC" disabled="disabled"/>
+		<param type="jsnparams" subtype="jsnlabel" default="MAINMENU" label="" description=""/>
+		<param name="enableMMFX" type="jsnparams" subtype="jsnradio" default="0" label="MM_FX" description="MM_FX_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableMMTransparency" type="jsnparams" subtype="jsnradio" default="0" label="MM_TRANSPARENCY" description="MM_TRANSPARENCY_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mainmenuIcons" size="60" type="jsnparams" subtype="jsniconselector" default="" label="MAINMENU_ICONS" description="MAINMENU_ICONS_DESC" disabled="disabled"/>
+		<param type="jsnparams" subtype="jsnlabel" default="SIDEMENU" label="" description=""/>
+		<param name="enableSMFX" type="jsnparams" subtype="jsnradio" default="0" label="SM_FX" description="SM_FX_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableSMTransparency" type="jsnparams" subtype="jsnradio" default="0" label="SM_TRANSPARENCY" description="SM_TRANSPARENCY_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="jsnparams" subtype="jsnlabel" default="SITETOOLS" label="" description="" altclass="pro"/>
+		<param name="sitetoolsPresentation" type="jsnparams" subtype="jsnlist" default="menu" label="SITETOOLS_PRESENTATION" description="SITETOOLS_PRESENTATION_DESC" disabled="disabled">
+			<option value="inline">INLINE</option>
+			<option value="menu">MENU</option>
+		</param>
+		<param name="enableTextSizer" type="jsnparams" subtype="jsnradio" default="0" label="TEXT_SIZER" description="TEXT_SIZER_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableWidthSelector" type="jsnparams" subtype="jsnradio" default="0" label="WIDTH_SELECTOR" description="WIDTH_SELECTOR_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableColorSelector" type="jsnparams" subtype="jsnradio" default="0" label="COLOR_SELECTOR" description="COLOR_SELECTOR_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="colorIcons" size="60" type="jsnparams" subtype="jsntext" default="blue,red,green,violet,orange,grey"	label="COLOR_ICONS" description="COLOR_ICONS_DESC" disabled="disabled"/>
+		<param type="jsnparams" subtype="jsnpanel" default="SEO_SYSTEM_SETTINGS" label="" description="" altclass="pro"/>
+		<param type="jsnparams" subtype="jsnlabel" default="ONLY_IN_PRO" label="" description=""/>
+		<param type="jsnparams" subtype="jsnlabel" default="SEO_ACCESSIBILITY" label="" description=""/>
+		<param name="enableWebsiteTitle" type="jsnparams" subtype="jsnradio" default="0" label="WEBSITE_TITLE" description="WEBSITE_TITLE_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableTopH1" type="jsnparams" subtype="jsnradio" default="0" label="TOP_H1" description="TOP_H1_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableGotopLink" type="jsnparams" subtype="jsnradio" default="0" label="GOTOP_LINK" description="GOTOP_LINK_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableIconLinks" type="jsnparams" subtype="jsnradio" default="0" label="AUTO_ICON" description="AUTO_ICON_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enablePrintingOptimization" type="jsnparams" subtype="jsnradio" default="0" label="PRINTING_OPTIMIZATION" description="PRINTING_OPTIMIZATION_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="jsnparams" subtype="jsnlabel" default="SYSTEM" label="" description=""/>
+		<param name="analyticsCodePosition" type="jsnparams" subtype="jsnlist" default="1" label="ANALYTICS_CODE_POSITION" description="ANALYTICS_CODE_POSITION_DESC" disabled="disabled">
+			<option value="0">Before ending HEAD tag</option>
+			<option value="1">Before ending BODY tag</option>
+		</param>
+		<param name="analyticsCode" cols="30" rows="2" type="jsnparams" subtype="jsntextarea" default="" label="ANALYTICS_CODE" description="ANALYTICS_CODE_DESC" disabled="disabled"/>
+		<param name="customCSS" cols="30" rows="4" type="jsnparams" subtype="jsntextarea" default="" label="CUSTOM_CSS" description="CUSTOM_CSS_DESC" disabled="disabled"/>
+		<param name="cssCompression" type="jsnparams" subtype="jsnradio" default="0" label="CSS_COMPRESSION" description="CSS_COMPRESSION_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cacheFolder" type="jsnparams" subtype="jsncachefolder" size="60" default="tmp/" label="CACHE_FOLDER" description="CACHE_FOLDER_DESC" phpversion="5.1.6" disabled="disabled"/>
+		<param type="jsnparams" subtype="jsnpanel" default="EXT_SETTINGS" label="" description="" altclass="pro" position="last"/>
+		<param type="jsnparams" subtype="jsnlabel" default="ONLY_IN_PRO" label="" description=""/>
+		<param name="k2Style" type="jsnparams" subtype="jsnradio" default="0" label="K2_STYLE" description="K2_STYLE_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cbStyle" type="jsnparams" subtype="jsnradio" default="0" label="CB_STYLE" description="CB_STYLE_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="vmStyle" type="jsnparams" subtype="jsnradio" default="0" label="VM_STYLE" description="VM_STYLE_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="jeventsStyle" type="jsnparams" subtype="jsnradio" default="0" label="JEVENTS_STYLE" description="JEVENTS_STYLE_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="jgStyle" type="jsnparams" subtype="jsnradio" default="0" label="JG_STYLE" description="JG_STYLE_DESC" disabled="disabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

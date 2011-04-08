@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>jConnector</name>
+	<creationDate>August 2009</creationDate>
+	<author>Web Scribble Solutions, Inc.</author>
+	<authorEmail>support@webscribble.com</authorEmail>
+	<authorUrl>webscribble.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>GPL</license>
+	<version>1.1</version>
+	<description>jConnector implements Facebook Connect in Joomla!</description>
+
+	<files>
+		<filename module="mod_jconnector">mod_jconnector.php</filename>
+	</files>
+
+	<params>
+		<param name="fb_key" type="text" default="" label="API key" description="FBKEY" />
+		<param name="fb_secret" type="text" default="" label="Application Secret" description="FBSECRET" />
+	</params>
+</install>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tips>
+	<tip>
+  		<title>Don't forget about Help Screen</title>
+  		<content>On every administrative screen, you can see a help icon on the most right side in toolbar. That's the button to open "Screen Help" with a lot of useful information regarding the screen. It's highly recommended for you to use "Screen Help", since you get the exact information you need and don't have to search thru big manual.</content>
+  	</tip>
+	<tip>
+  		<title>Do regular backup</title>
+  		<content>JSN ImageShow has a special section "Maintenance", where you can perform backup and restore operations. It's highly recommended for you to do backup regularly. It might take a lot of efforts to configure your showlists and showcases and you don't want to lose those.</content>
+  	</tip> 
+	<tip>
+  		<title>Check for product update regularly</title>
+  		<content>In section "About" there is a direct link to JSN ImageShow product page, where you can download latest product's updates. We always listen what customers say and continuously improving the product. When purchasing JSN ImageShow you are legitimate for 1-year free update, so don't miss this opportunity.</content>
+  	</tip>
+	<tip>
+  		<title>Preview Showcase right on Showcases Manager page</title>
+  		<content>In "Showcases Manager" page, there is a column with "Screen" icons, clicking on which will open modal window with showcase preview. This is very convenient way for you to understand all showcases you have and to pick the right one to edit.</content>
+  	</tip>  	
+	<tip>
+  		<title>Manage images right on Showlists Manager page</title>
+  		<content>In "Showlists Manager" page, there is a column with "Image" icons, clicking on which will direct you right to the Showlist Images Manager page. This is very convenient way for you to go directly to the page where you can operate on images in the showlist, without having to go to Showlist Settings page first.</content>
+  	</tip>  	
+</tips>

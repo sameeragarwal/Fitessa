@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tips>
+	<tip>
+  		<title>Pamiętaj o ekranie pomocy</title>
+  		<content>Na każdym ekranie panelu administracyjnego w prawym górnym rogu znajdziesz ikonę pomocy. Jej kliknięcie powoduje otwarcie ekranu pomocy. Ekran ten zawiera wiele pożytecznych informacji związanych z działaniami, które właśnie wykonujesz. Zalecamy korzystanie z tej metody uzyskiwania pomocy.</content>
+  	</tip>
+	<tip>
+  		<title>Regularnie zapisuj dane</title>
+  		<content>JSN ImageShow zawiera specjalny dział o nazwie Archiwizacja, w którym zapisać dane w archiwum lub zaimportować dane z archiwum. Zalecamy regularną archiwizację danych. Pozwoli to uniknąć konieczności ponownej żmudnej konfiguracji produktu w przypadku utraty danych.</content>
+  	</tip> 
+	<tip>
+  		<title>Regularnie sprawdzaj aktualizacje</title>
+  		<content>W dziale O produkcie znajdziesz bezpośredni odnośnik do strony produktu JSN ImageShow, z której możesz pobrać najnowsze aktualizacje. Słuchamy naszych klientów i stale modernizujemy nasze produkty. Zakup JSN ImageShow upoważnia Cię do pobierania aktualizacji przez rok, nie strać tej okazji.</content>
+  	</tip>
+	<tip>
+  		<title>Testuj metody wyświetlania bezpośrednio w panelu metod</title>
+  		<content>W dziale Metody wyświetlania znajdziesz kolumnę z ikoną Wyświetl podgląd. Korzystaj z niej; to bardzo dobra metoda na zrozumienie parametrów wyświetlania i dokonanie odpowiednich ustawień.</content>
+  	</tip>  	
+	<tip>
+  		<title>Zarządzaj grafikami bezpośrednio w panelu list</title>
+  		<content>W dziale Listy grafik znajdziesz ikonę Grafiki. Kliknij ją, aby przejść bezpośrednio do zarządzania grafikami listy. Pozwoli Ci to ominąć ekran konfiguracji listy.</content>
+  	</tip>
+</tips>

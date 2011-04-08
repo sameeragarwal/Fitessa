@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide">
+	<params>
+		<param name="general_swf_library" type="radio" default="2" label="SWFOBJECT LIBRARY UTILIZATION" description="DES SWFOBJECT LIBRARY UTILIZATION">
+			<option value="0">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="general_show_technical" type="radio" default="1" label="SHOW TECHNICAL REQUIREMENTS" description="DES SHOW TECHNICAL REQUIREMENTS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</config>

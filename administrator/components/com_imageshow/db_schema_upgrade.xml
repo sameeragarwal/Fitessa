@@ -1,0 +1,297 @@
+<product iname="JSN Imageshow" type="extension">
+	<version number="2.3.0">
+		<release_date>5/1/1010</release_date>
+		<tables>
+			<table id="1" status="ADDED" name="#__imageshow_configuration">
+				<field id="1" status="ADDED" name="configuration_id" type="int(11) unsigned" primary_key="yes"/>
+				<field id="2" status="ADDED" name="configuration_title" type="varchar(150)"/>
+				<field id="3" status="ADDED" name="flickr_api_key" type="char(150)"/>
+				<field id="4" status="ADDED" name="flickr_secret_key" type="char(150)"/>
+				<field id="5" status="ADDED" name="flickr_username" type="char(50)"/>
+				<field id="6" status="ADDED" name="flickr_caching" type="tinyint(1)"/>
+				<field id="7" status="ADDED" name="flickr_cache_expiration" type="char(30)"/>
+				<field id="8" status="ADDED" name="flickr_image_size" type="tinyint(2)"/>
+				<field id="9" status="ADDED" name="root_image_folder" type="char(150)"/>
+				<field id="10" status="ADDED" name="picasa_user_name" type="char(100)"/>
+				<field id="11" status="ADDED" name="source_type" type="tinyint(2)"/>
+				<field id="12" status="ADDED" name="published" type="tinyint(1)"/>
+			</table>
+			<table id="2" status="ADDED" name="#__imageshow_images">
+				<field id="13" status="ADDED" name="image_id" type="int(11)" primary_key="yes"/>
+				<field id="14" status="ADDED" name="showlist_id" type="int(11)"/>
+				<field id="15" status="ADDED" name="image_extid" type="varchar(255)"/>
+				<field id="16" status="ADDED" name="album_extid" type="varchar(255)"/>
+				<field id="17" status="ADDED" name="image_small" type="varchar(255)"/>
+				<field id="18" status="ADDED" name="image_medium" type="varchar(255)"/>
+				<field id="19" status="ADDED" name="image_big" type="text"/>
+				<field id="20" status="ADDED" name="image_title" type="varchar(255)"/>
+				<field id="21" status="ADDED" name="image_description" type="text"/>
+				<field id="22" status="ADDED" name="image_link" type="varchar(255)"/>
+				<field id="23" status="ADDED" name="ordering" type="tinyint(1)"/>
+				<field id="24" status="ADDED" name="synchronize" type="tinyint(1)"/>
+			</table>
+			<table id="3" status="ADDED" name="#__imageshow_log">
+				<field id="25" status="ADDED" name="log_id" type="int(11) unsigned" primary_key="yes"/>
+				<field id="26" status="ADDED" name="user_id" type="int(11)"/>
+				<field id="27" status="ADDED" name="url" type="varchar(255)"/>
+				<field id="28" status="ADDED" name="result" type="varchar(255)"/>
+				<field id="29" status="ADDED" name="screen" type="varchar(100)"/>
+				<field id="30" status="ADDED" name="action" type="varchar(50)"/>
+				<field id="31" status="ADDED" name="time_created" type="timestamp"/>
+			</table>
+			<table id="4" status="ADDED" name="#__imageshow_showcase">
+				<field id="32" status="ADDED" name="showcase_id" type="int(11) unsigned" primary_key="yes"/>
+				<field id="33" status="ADDED" name="showcase_title" type="varchar(255)"/>
+				<field id="34" status="ADDED" name="published" type="tinyint(1)"/>
+				<field id="35" status="ADDED" name="ordering" type="int(4)"/>
+				<field id="36" status="ADDED" name="background_color" type="char(30)"/>								
+				<field id="37" status="ADDED" name="general_overall_width" type="char(30)"/>
+				<field id="38" status="ADDED" name="general_overall_height" type="char(30)"/>				
+				<field id="39" status="ADDED" name="general_round_corner_radius" type="char(30)"/>
+				<field id="40" status="ADDED" name="general_border_stroke" type="char(30)"/>
+				<field id="41" status="ADDED" name="general_border_color" type="char(30)"/>				
+				<field id="42" status="ADDED" name="general_number_images_preload" type="char(30)"/>		  					
+				<field id="43" status="ADDED" name="general_open_link_in" type="char(30)"/>
+				<field id="44" status="ADDED" name="general_link_source" type="char(30)"/>
+				<field id="45" status="ADDED" name="general_title_source" type="char(30)"/>
+				<field id="46" status="ADDED" name="general_des_source" type="char(30)"/>
+				<field id="47" status="ADDED" name="general_images_order" type="char(30)"/>								
+				<field id="48" status="ADDED" name="imgpanel_presentation_mode" type="char(30)"/>							
+				<field id="49" status="ADDED" name="imgpanel_img_transition_type_fit" type="char(30)"/>
+				<field id="50" status="ADDED" name="imgpanel_img_transition_timing_fit" type="char(50)"/>				
+				<field id="51" status="ADDED" name="imgpanel_img_click_action_fit" type="char(30)"/>
+				<field id="52" status="ADDED" name="imgpanel_img_transition_type_expand" type="char(50)"/>
+				<field id="53" status="ADDED" name="imgpanel_img_transition_timing_expand" type="char(255)"/>				
+				<field id="54" status="ADDED" name="imgpanel_img_motion_type_expand" type="char(30)"/>
+				<field id="55" status="ADDED" name="imgpanel_img_motion_timing_expand" type="char(50)"/>
+				<field id="56" status="ADDED" name="imgpanel_img_click_action_expand" type="char(30)"/>				
+				<field id="57" status="ADDED" name="imgpanel_bg_type" type="char(30)"/>
+				<field id="58" status="ADDED" name="imgpanel_bg_value" type="char(255)"/>
+				<field id="59" status="ADDED" name="imgpanel_show_watermark" type="tinyint(1)"/>			
+				<field id="60" status="ADDED" name="imgpanel_watermark_path" type="char(255)"/>
+				<field id="61" status="ADDED" name="imgpanel_watermark_position" type="char(30)"/>
+				<field id="62" status="ADDED" name="imgpanel_watermark_offset" type="char(30)"/>				
+				<field id="63" status="ADDED" name="imgpanel_watermark_opacity" type="char(30)"/>
+				<field id="64" status="ADDED" name="imgpanel_show_overlay_effect" type="tinyint(1)"/>
+				<field id="65" status="ADDED" name="imgpanel_overlay_effect_type" type="char(30)"/>								
+				<field id="66" status="ADDED" name="imgpanel_show_inner_shawdow" type="tinyint(1)"/>
+				<field id="67" status="ADDED" name="thumbpanel_show_panel" type="tinyint(1)"/>
+				<field id="68" status="ADDED" name="thumbpanel_panel_position" type="char(30)"/>				
+				<field id="69" status="ADDED" name="thumbpanel_collapsible_position" type="tinyint(1)"/>
+				<field id="70" status="ADDED" name="thumbpanel_thumb_browsing_mode" type="char(30)"/>
+				<field id="71" status="ADDED" name="thumbpanel_show_thumb_status" type="tinyint(1)"/>			
+				<field id="72" status="ADDED" name="thumbpanel_active_state_color" type="char(30)"/>
+				<field id="73" status="ADDED" name="thumbpanel_presentation_mode" type="char(30)"/>
+				<field id="74" status="ADDED" name="thumbpanel_border" type="char(30)"/>				
+				<field id="75" status="ADDED" name="thumbpanel_enable_big_thumb" type="tinyint(1)"/>
+				<field id="76" status="ADDED" name="thumbpanel_big_thumb_size" type="char(30)"/>
+				<field id="77" status="ADDED" name="thumbpanel_thumb_row" type="char(30)"/>					
+				<field id="78" status="ADDED" name="thumbpanel_thumb_width" type="char(30)"/>
+				<field id="79" status="ADDED" name="thumbpanel_thumb_height" type="char(30)"/>
+				<field id="80" status="ADDED" name="thumbpanel_big_thumb_color" type="char(30)"/>
+				<field id="81" status="ADDED" name="thumbpanel_thumb_border" type="char(30)"/>
+				<field id="82" status="ADDED" name="thumbpanel_thumnail_panel_color" type="char(30)"/>
+				<field id="83" status="ADDED" name="thumbpanel_thumnail_normal_state" type="char(30)"/>								
+				<field id="84" status="ADDED" name="infopanel_panel_position" type="char(30)"/>
+				<field id="85" status="ADDED" name="infopanel_presentation" type="char(30)"/>
+				<field id="86" status="ADDED" name="infopanel_bg_color_fill" type="char(30)"/>				
+				<field id="87" status="ADDED" name="infopanel_panel_click_action" type="char(30)"/>
+				<field id="88" status="ADDED" name="infopanel_show_title" type="char(30)"/>
+				<field id="89" status="ADDED" name="infopanel_title_css" type="char(30)"/>				
+				<field id="90" status="ADDED" name="infopanel_show_des" type="tinyint(1)"/>			
+				<field id="91" status="ADDED" name="infopanel_des_lenght_limitation" type="char(30)"/>	
+				<field id="92" status="ADDED" name="infopanel_des_css" type="char(30)"/>				
+				<field id="93" status="ADDED" name="infopanel_show_link" type="tinyint(1)"/>
+				<field id="94" status="ADDED" name="infopanel_link_css" type="char(250)"/>	
+				<field id="95" status="ADDED" name="toolbarpanel_panel_position" type="char(30)"/>
+				<field id="96" status="ADDED" name="toolbarpanel_presentation" type="char(30)"/>
+				<field id="97" status="ADDED" name="toolbarpanel_show_image_navigation" type="tinyint(1)"/>
+				<field id="98" status="ADDED" name="toolbarpanel_slideshow_player" type="tinyint(1)"/>				
+				<field id="99" status="ADDED" name="toolbarpanel_show_fullscreen_switcher" type="tinyint(1)"/>
+				<field id="100" status="ADDED" name="slideshow_show_thumb_panel" type="tinyint(1)"/>
+				<field id="101" status="ADDED" name="slideshow_show_overlay_effect" type="tinyint(1)"/>		
+				<field id="102" status="ADDED" name="slideshow_slide_timing" type="char(50)"/>	
+				<field id="103" status="ADDED" name="slideshow_show_image_navigation" type="tinyint(1)"/>	
+				<field id="104" status="ADDED" name="slideshow_process" type="tinyint(1)"/>					
+				<field id="105" status="ADDED" name="slideshow_show_watermark" type="tinyint(1)"/>	
+				<field id="106" status="ADDED" name="slideshow_show_timer" type="tinyint(1)"/>	
+				<field id="107" status="ADDED" name="slideshow_enable_ken_burn_effect" type="tinyint(1)"/>					
+				<field id="108" status="ADDED" name="slideshow_presentation_mode" type="char(30)"/>	
+				<field id="109" status="ADDED" name="slideshow_looping" type="tinyint(1)"/>							
+				<field id="110" status="ADDED" name="date_created" type="datetime"/>	
+				<field id="111" status="ADDED" name="date_modified" type="datetime"/>					
+			</table>
+			<table id="5" status="ADDED" name="#__imageshow_showlist">
+				<field id="112" status="ADDED" name="showlist_id" type="int(11) unsigned" primary_key="yes"/>
+				<field id="113" status="ADDED" name="showlist_title" type="varchar(40)"/>
+				<field id="114" status="ADDED" name="published" type="tinyint(1)"/>
+				<field id="115" status="ADDED" name="ordering" type="int(11)"/>
+				<field id="116" status="ADDED" name="access" type="tinyint(3)"/>
+				<field id="117" status="ADDED" name="hits" type="int(11)"/>
+				<field id="118" status="ADDED" name="description" type="text"/>
+				<field id="119" status="ADDED" name="showlist_link" type="text"/>
+				<field id="120" status="ADDED" name="alter_autid" type="int(11)"/>
+				<field id="121" status="ADDED" name="alter_id" type="int(11)"/>
+				<field id="122" status="ADDED" name="date_create" type="datetime"/>
+				<field id="123" status="ADDED" name="showlist_source" type="tinyint(2)"/>
+				<field id="124" status="ADDED" name="configuration_id" type="int(11)"/>
+				<field id="125" status="ADDED" name="authorization_status" type="tinyint(1)"/>
+				<field id="126" status="ADDED" name="alternative_status" type="tinyint(2)"/>
+				<field id="127" status="ADDED" name="date_modified" type="datetime"/>
+			</table>							
+		</tables>
+	</version>
+	<version number="2.3.1">
+		<release_date>5/1/1010</release_date>
+	</version>
+	<version number="2.3.2">
+		<release_date>5/1/1010</release_date>
+	</version>
+	<version number="2.3.3">
+		<release_date>5/1/1010</release_date>
+	</version>
+	<version number="2.3.4">
+		<release_date>5/1/1010</release_date>
+		<tables>
+			<table id="4" status="CHANGED" name="#__imageshow_showcase">							
+			    <field id="128" status="ADDED" name="toolbarpanel_show_tooltip" type="tinyint(1)" not_null="yes" default_value="0"/>			  						
+			</table>
+		</tables>		
+	</version>
+	<version number="2.4.0">
+		<release_date>5/1/1010</release_date>
+		<tables>
+			<table id="6" status="ADDED" name="#__imageshow_parameters">	
+			    <field id="129" status="ADDED" name="id" type="int(11) unsigned" not_null="no" primary_key="yes" />			
+				<field id="130" status="ADDED" name="general_swf_library" type="tinyint(1)" not_null="yes" default_value="1"/>	
+				<field id="131" status="ADDED" name="general_show_technical" type="tinyint(1)" not_null="yes" default_value="0"/>	
+				<field id="132" status="ADDED" name="license_key" type="varchar(50)" not_null="yes" default_value="null"/>	
+			</table>
+			<table id="7" status="ADDED" name="#__imageshow_messages">	
+			    <field id="133" status="ADDED" name="msg_id" type="int(11) unsigned" not_null="no" primary_key="yes" />			
+				<field id="134" status="ADDED" name="msg_screen" type="varchar(150)" not_null="yes" default_value="null"/>	
+				<field id="135" status="ADDED" name="published" type="tinyint(1)" not_null="yes" default_value="0"/>	
+				<field id="136" status="ADDED" name="ordering" type="int(11)" not_null="yes" default_value="0"/>
+			</table>
+		</tables>			
+	</version>
+	<version number="2.5">
+		<release_date>5/1/1010</release_date>
+		<tables>
+			<table id="6" status="CHANGED" name="#__imageshow_parameters">							
+				<field id="137" status="ADDED" name="root_url" type="tinyint(1)" not_null="yes" default_value="1"/>						
+			</table>		
+		</tables>	
+	</version>
+	<version number="2.6">
+		<release_date>5/1/1010</release_date>		
+		<tables>
+			<table id="4" status="CHANGED" name="#__imageshow_showcase">							
+				<field id="138" status="ADDED" name="imgpanel_inner_shawdow_color" not_null="yes" type="char(30)" default_value="null"/>
+			    <field id="106" status="CHANGED" name="slideshow_show_status" not_null="yes" type="tinyint(1)"/>				
+			</table>										
+		</tables>
+	</version>	
+	<version number="2.6.0">
+		<release_date>5/1/1010</release_date>
+		<tables>
+			<table id="2" status="CHANGED" name="#__imageshow_images">							
+			    <field id="139" status="ADDED" name="image_size" type="varchar(25)" not_null="yes" default_value="null"/>			  						
+			</table>		
+		</tables>
+	</version>	
+	<version number="2.6.1">
+		<release_date>5/1/1010</release_date>
+	</version>		
+	<version number="2.6.2">
+		<release_date>8/10/12010</release_date>
+	</version>	
+	<version number="3.0.0">
+		<release_date>8/10/12010</release_date>
+		<tables>
+			<table id="5" status="CHANGED" name="#__imageshow_showlist">
+				<field id="140" status="ADDED" name="alter_image_path" type="varchar(255)" not_null="yes" default_value="null"/>
+				<field id="141" status="ADDED" name="alter_module_id" type="int(11)" not_null="yes" default_value="0"/>
+				<field id="142" status="ADDED" name="seo_module_id" type="int(11)" not_null="yes" default_value="0"/>
+				<field id="143" status="ADDED" name="seo_article_id" type="int(11)" not_null="yes" default_value="0"/>
+				<field id="144" status="ADDED" name="seo_status" type="tinyint(2)" not_null="yes" default_value="0"/>
+			</table>
+			<table id="6" status="CHANGED" name="#__imageshow_parameters">	
+			    <field id="131" status="REMOVED" name="general_show_technical"/>
+				<field id="132" status="REMOVED" name="license_key"/>
+			</table>		
+			<table id="4" status="CHANGED" name="#__imageshow_showcase">	
+				<field id="145" status="ADDED" name="theme_id" type="int(11)" not_null="yes" default_value="0"/>
+				<field id="146" status="ADDED" name="theme_name" type="varchar(255)" not_null="yes" default_value="null"/>
+				<field id="48" status="REMOVED" name="imgpanel_presentation_mode"/>
+				<field id="49" status="REMOVED" name="imgpanel_img_transition_type_fit"/>
+				<field id="50" status="REMOVED" name="imgpanel_img_transition_timing_fit"/>
+				<field id="51" status="REMOVED" name="imgpanel_img_click_action_fit"/>
+				<field id="52" status="REMOVED" name="imgpanel_img_transition_type_expand"/>
+				<field id="53" status="REMOVED" name="imgpanel_img_transition_timing_expand" />
+				<field id="54" status="REMOVED" name="imgpanel_img_motion_type_expand"/>
+				<field id="55" status="REMOVED" name="imgpanel_img_motion_timing_expand"/>
+				<field id="56" status="REMOVED" name="imgpanel_img_click_action_expand"/>			  
+				<field id="57" status="REMOVED" name="imgpanel_bg_type"/>
+				<field id="58" status="REMOVED" name="imgpanel_bg_value"/>
+				<field id="59" status="REMOVED" name="imgpanel_show_watermark"/>
+				<field id="60" status="REMOVED" name="imgpanel_watermark_path"/>
+				<field id="61" status="REMOVED" name="imgpanel_watermark_position"/>
+				<field id="62" status="REMOVED" name="imgpanel_watermark_offset"/>
+				<field id="63" status="REMOVED" name="imgpanel_watermark_opacity"/>
+				<field id="64" status="REMOVED" name="imgpanel_show_overlay_effect"/>
+				<field id="65" status="REMOVED" name="imgpanel_overlay_effect_type"/>
+				<field id="66" status="REMOVED" name="imgpanel_show_inner_shawdow"/>			  
+				<field id="67" status="REMOVED" name="thumbpanel_show_panel"/>
+				<field id="68" status="REMOVED" name="thumbpanel_panel_position"/>
+				<field id="69" status="REMOVED" name="thumbpanel_collapsible_position"/>
+				<field id="70" status="REMOVED" name="thumbpanel_thumb_browsing_mode"/>
+				<field id="71" status="REMOVED" name="thumbpanel_show_thumb_status"/>
+				<field id="72" status="REMOVED" name="thumbpanel_active_state_color"/>
+				<field id="73" status="REMOVED" name="thumbpanel_presentation_mode"/>
+				<field id="74" status="REMOVED" name="thumbpanel_border"/>
+				<field id="75" status="REMOVED" name="thumbpanel_enable_big_thumb"/>
+				<field id="76" status="REMOVED" name="thumbpanel_big_thumb_size"/>
+				<field id="77" status="REMOVED" name="thumbpanel_thumb_row"/>
+				<field id="78" status="REMOVED" name="thumbpanel_thumb_width"/>
+				<field id="79" status="REMOVED" name="thumbpanel_thumb_height"/>
+				<field id="80" status="REMOVED" name="thumbpanel_big_thumb_color"/>
+				<field id="81" status="REMOVED" name="thumbpanel_thumb_border"/>
+				<field id="82" status="REMOVED" name="thumbpanel_thumnail_panel_color"/>
+				<field id="83" status="REMOVED" name="thumbpanel_thumnail_normal_state"/>
+				<field id="84" status="REMOVED" name="infopanel_panel_position"/>
+				<field id="85" status="REMOVED" name="infopanel_presentation"/>
+				<field id="86" status="REMOVED" name="infopanel_bg_color_fill"/>
+				<field id="87" status="REMOVED" name="infopanel_panel_click_action"/>
+				<field id="88" status="REMOVED" name="infopanel_show_title"/>
+				<field id="89" status="REMOVED" name="infopanel_title_css"/>
+				<field id="90" status="REMOVED" name="infopanel_show_des"/>
+				<field id="91" status="REMOVED" name="infopanel_des_lenght_limitation"/>
+				<field id="92" status="REMOVED" name="infopanel_des_css"/>
+				<field id="93" status="REMOVED" name="infopanel_show_link"/>
+				<field id="94" status="REMOVED" name="infopanel_link_css"/>
+				<field id="95" status="REMOVED" name="toolbarpanel_panel_position"/>
+				<field id="96" status="REMOVED" name="toolbarpanel_presentation"/>
+				<field id="97" status="REMOVED" name="toolbarpanel_show_image_navigation"/>
+				<field id="98" status="REMOVED" name="toolbarpanel_slideshow_player"/>
+				<field id="99" status="REMOVED" name="toolbarpanel_show_fullscreen_switcher"/>
+				<field id="100" status="REMOVED" name="slideshow_show_thumb_panel"/>
+				<field id="101" status="REMOVED" name="slideshow_show_overlay_effect"/>
+				<field id="102" status="REMOVED" name="slideshow_slide_timing"/>
+				<field id="103" status="REMOVED" name="slideshow_show_image_navigation"/>
+				<field id="104" status="REMOVED" name="slideshow_process"/>
+				<field id="105" status="REMOVED" name="slideshow_show_watermark"/>
+				<field id="106" status="REMOVED" name="slideshow_show_status"/>
+				<field id="107" status="REMOVED" name="slideshow_enable_ken_burn_effect"/>
+				<field id="108" status="REMOVED" name="slideshow_presentation_mode"/>
+				<field id="109" status="REMOVED" name="slideshow_looping"/>
+ 				<field id="128" status="REMOVED" name="toolbarpanel_show_tooltip"/>		
+			  	<field id="138" status="REMOVED" name="imgpanel_inner_shawdow_color"/>					
+			</table>	
+			<table id="2" status="CHANGED" name="#__imageshow_images">
+				<field id="24" status="CHANGED" name="custom_data" not_null="yes" type="tinyint(1)"/>
+				<field id="147" status="ADDED" name="sync" type="tinyint(1)" not_null="yes" default_value="0"/>
+			</table>	
+		</tables>				
+	</version>	
+</product>

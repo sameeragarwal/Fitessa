@@ -1,0 +1,1176 @@
+/**
+ * @author JoomlaShine.com Team
+ * @copyright JoomlaShine.com
+ * @link joomlashine.com
+ * @package JSN ImageShow
+ * @version 2.0
+ * @license GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+ */
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+html, body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+html body.contentpane {
+	height: auto;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address {
+	margin: 0.35em 0 0.8em;
+	padding: 0;
+}
+fieldset {
+	margin: 5px;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1 {
+	font-size: 1.5em;
+	color: #000000;
+}
+h2 {
+	font-size: 1.4em;
+	color: #000000;
+}
+h3 {
+	font-size: 1.3em;
+	color: #CC3333;
+}
+h4 {
+	font-size: 1.2em;
+	color: #CC8033;
+}
+h5, h6 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #333333;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.8em 0 0.3em;
+}
+.jsnis-readonly {
+	background-color: #ECE9D8;
+}
+.clearbreak {
+	clear: both;
+}
+.clearafter:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - GENERAL TYPOGRAPHY =============== */
+hr {
+    background-color: #E6E6E6;
+    border: medium none;
+    height: 1px;
+    margin: 1.5em 0;
+}
+/* ----- TEXT ----- */
+.content-center {
+	text-align: center;
+}
+.tips {
+	padding-left: 20px;
+	background: url(../images/icon-uni-16/icon-tip-on.png) no-repeat scroll left top;
+}
+.text-alert {
+	background: #FFDFDF url(../images/icon-uni-24/icon-warning.png) 20px center no-repeat;
+	border-bottom: 2px solid #FEABAB;
+	border-top: 2px solid #FEABAB;
+	padding: 0.6em 0.8em 0.6em 4.8em;
+}
+/* ----- LINKS ----- */
+.jsnis-link-arrow {
+	padding-left: 10px;
+	list-style-image:url(../images/link-arrow.png);
+}
+.jsnis-action-link:link,
+.jsnis-action-link:visited {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.jsnis-action-link:hover {
+	background-color: #0B55C4;
+	color: #fff;
+	text-decoration: none;
+}
+/* ----- HORIZONTAL LIST ----- */
+ul.list-horizontal {
+	margin: 0;
+	padding: 0 0 10px 0;
+	list-style: none;
+}
+ul.list-horizontal li {
+	display: inline;
+	margin: 0 .5em;
+}
+/* ----- NOBULLET LIST ----- */
+ul.list-nobullet {
+	margin: 0;
+	list-style: none;
+}
+ul.list-nobullet li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+/* ----- BUTTON ----- */
+.jsnis-button a {
+	color: #000000;
+	font-weight: bold;
+}
+.link-button:link,
+.link-button:visited {
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999999;
+	padding: 6px 10px;
+	cursor: pointer;
+	background: url(../images/backgrounds/bg-button.png) left center repeat-x;
+}
+.link-button:hover {
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 2px #333333;
+	-moz-box-shadow: 0px 0px 2px #333333;
+	box-shadow: 0px 0px 2px #333333;
+}
+.link-disabled {
+	font-weight: bold;
+	color: #999;
+	background: none;
+}
+.link-disabled:hover {
+	cursor: default;
+	color: #999;
+}
+/* ============================== HEADER ICON ============================== */
+div.header {
+	text-shadow: 1px 1px 1px #CCCCCC;
+	background-position: 4px 2px;
+	background-repeat: no-repeat;
+}
+.icon-48-launchpad {
+	background-image: url(../images/icon-uni-48/icon-launchpad.png);
+}
+.icon-48-showlist,
+.icon-48-showlist-settings {
+	background-image: url(../images/icon-uni-48/icon-showlist.png);
+}
+.icon-48-showcase {
+	background-image: url(../images/icon-uni-48/icon-showcase.png);
+}
+.icon-48-help {
+	background-image: url(../images/icon-uni-48/icon-help.png);
+}
+.icon-48-about {
+	background-image: url(../images/icon-uni-48/icon-about.png);
+}
+.icon-48-configuration,
+.icon-48-configuration-settings,
+.icon-48-maintenance {
+	background-image: url(../images/icon-uni-48/icon-configuration.png);
+}
+/* ============================== BOX STYLES ============================== */
+.jsnis-dgrey-container {
+	color: #FFF;
+	background: #6A6A6A url(../images/backgrounds/bg-dgrey-box.png) left bottom repeat-x;
+}
+.jsnis-dgrey-container-style {
+	border: 2px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 0 2px 5px 0 #666;
+	-webkit-box-shadow: 0 2px 5px 0 #666;
+}
+.jsnis-orange-container {
+	background: #FFD75E url(../images/backgrounds/bg-orange-box.png) left bottom repeat-x ;
+}
+.jsnis-orange-container-style {
+	border: 2px solid #FF9901;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 2px 2px 2px #CFCFCF;
+	-webkit-box-shadow: 2px 2px 2px #CFCFCF;
+}
+.jsnis-dgrey-heading {
+	background: #6A6A6A url(../images/backgrounds/bg-dgrey-heading.png) left bottom repeat-x;
+}
+.jsnis-dgrey-heading-style {
+	border: 2px solid #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 2px 5px 0 #666;
+	-webkit-box-shadow: 0 2px 5px 0 #666;
+}
+.jsnis-element-heading {
+	color: #000;
+	margin: 0;
+	font-size: 16px;
+}
+.jsnis-dgrey-heading .jsnis-element-heading,
+.jsnis-dgrey-container .jsnis-element-heading {
+	color: #FFCF40;
+	text-shadow: 0 1px 3px #333;
+	padding: 8px;
+}
+.jsnis-orange-container .jsnis-element-heading {
+	color: #333333;
+}
+/* ============================== LAUNCH PAD ============================== */
+.jsnis-cpanel-container {
+	font-size: 12px;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 20px auto;
+	padding-top: 10px;
+	width: 610px;
+}
+.jsnis-cpanel-container .jsnis-cpanel-block {
+	margin-bottom: 22px;
+}
+.jsnis-cpanel-container .jsnis-gallery-option {
+	margin-left: 108px;
+	padding: 17px 15px;
+}
+.jsnis-cpanel-container .jsnis-gallery-option .jsnis-element-heading {
+	padding: 0;
+}
+.jsnis-process-step {
+	margin: 25px 0;
+	background-color: #F4F4F4;
+	border: 1px solid #D4D4D4;
+	height: 76px;
+	width: 76px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	float: left;
+	text-align: center;
+}
+.jsnis-process-step h3 {
+	margin: 0;
+	font-size: 50px;
+	line-height: 76px;
+	color: #D4D4D4;
+	text-shadow: 1px 1px 0 #989898;
+}
+.jsnis-gallery-selection {
+	position: relative;
+}
+.jsnis-gallery-selection .jsnis-gallery-selectbox {
+	padding: 6px;
+	width: 370px;
+	border: 1px solid #C6C6C6;
+	background-color: #FFF;
+	color: #000;
+	font-size: 16px;
+}
+.jsnis-gallery-selection #presentation_method {
+	background-color: #EEEEEE;
+	color: #666666;
+}
+.jsnis-gallery-selection #presentation_method.active {
+	background-color: #FFF;
+	color: #000;
+}
+.jsnis-gallery-selection .jsnis-button {
+	background: url(../images/backgrounds/bg-button.png) left center repeat-x;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999999;
+	font-size: 16px;
+	padding: 7px 0;
+	color: #333;
+	float: right;
+	width: 90px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-weight: bold;
+}
+.jsnis-gallery-selection .jsnis-button.disabled {
+	color: #999;
+	background: #E4E4E4;
+}
+.jsnis-gallery-selection .jsnis-button:hover {
+	text-decoration: none;
+}
+.jsnis-gallery-nav-button {
+	display: inline-block;
+}
+.jsnis-gallery-nav-button a {
+	vertical-align: bottom;
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin-left: 5px;
+	position: relative;
+}
+.jsnis-gallery-nav-button a:hover {
+	text-decoration: none;
+}
+.jsnis-gallery-nav-button .icon-add {
+	background: url(../images/icon-uni-24/icon-add.png) 0 0 no-repeat;
+}
+.jsnis-gallery-nav-button .icon-add:hover {
+	background-position: 0 -24px;
+}
+.jsnis-gallery-nav-button .icon-folder {
+	background: url(../images/icon-uni-24/icon-folder.png) 0 0 no-repeat;
+}
+.jsnis-gallery-nav-button .icon-folder:hover {
+	background-position: 0 -24px;
+}
+.jsnis-gallery-nav-button .icon-edit {
+	background: url(../images/icon-uni-24/icon-edit.png) 0 0 no-repeat;
+}
+.jsnis-gallery-nav-button .icon-edit:hover {
+	background-position: 0 -24px;
+}
+.jsnis-gallery-nav-button .icon-edit.icon-disabled {
+	background-position: 0 -48px;
+}
+.jsnis-menutype-selection {
+	display: none;
+	margin-top: 10px;
+}
+.jsnis-plugin-details h3 {
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 0;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* ============================== SHOWLIST ============================== */
+.jsnis-showlist-settings {
+	margin-top: 5px;
+}
+table.adminlist td.list-order p {
+	width: 90px;
+}
+table.adminlist td.list-order p span {
+	float: left;
+	width: 20px;
+}
+#jsnis-no-showlist,
+#jsnis-showlist-flex {
+	margin: 15px 5px 10px 5px;
+}
+table.admintable .showlist-input {
+	float: left;
+	width: 70%;
+}
+#wrap-aut-article,
+#wrap-btt-module,
+#wrap-btt-article,
+#wrap-btt-image,
+#wrap-seo-article,
+#wrap-seo-module {
+	margin-top: 7px;
+}
+#jsnis-flex-control-button {
+	text-align: right;
+}
+#jsnis-flex-control-button a {
+	border: none;
+	font-size: 12px;
+	color: #000;
+	text-decoration:none;
+	cursor:pointer;
+	font-weight: bold;
+}
+#jsnis-flex-control-button a.disabled {
+	cursor:default;
+	color: #666;
+	font-weight: normal;
+}
+#jsnis-flex-control-button .jsnis-panel-increase {
+	background: url(../images/source-selection-sizer.png) left -8px no-repeat;
+	padding-left: 14px;
+}
+#jsnis-flex-control-button .jsnis-panel-decrease {
+	background: url(../images/source-selection-sizer.png) right 6px no-repeat;
+	padding-right: 14px;
+}
+#jsnis-no-showlist {
+	border: 1px solid #CCC;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+#jsnis-no-showlist p {
+	background: url(../images/icon-showlist-empty.png) center top no-repeat;
+	color: #D3D3D3;
+	font-size: 32px;
+	font-weight: bold;
+	width: 440px;
+	padding-top: 120px;
+	margin: 105px auto;
+	text-align: center;
+}
+.jsnis-showlist-edition{
+	font-size: 12px;
+	font-weight: bold;
+}
+/* ============================== SHOW CASE ============================== */
+.jsnis-showcase-settings {
+	margin-top: 5px;
+}
+.jsnis-icon-view-color {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	border: 1px solid #333333;
+	position: absolute;
+	top: 2px;
+}
+/*-----Showcase - General Tabs -----*/
+#general_background_color,
+td.showcase-input-field a {
+	height: 17px;
+	display: inline-block;
+	position: relative;
+}
+#general_background_color:hover,
+td.showcase-input-field a:hover {
+	text-decoration: none;
+}
+td.showcase-input-field input {
+	float: left;
+	background-color: #ECE9D8;
+	margin-right: 5px;
+}
+span.color-selection {
+	margin-left: 15px;
+}
+span.color-selection:hover {
+	text-decoration: underline;
+}
+/*-----Showcase - Select Themes -----*/
+#jsnis-no-theme {
+	border: 1px solid #CCCCCC;
+	background-color: #F9F9F9;
+	text-align: center;
+	margin-top: 15px;
+	padding: 35px 0;
+}
+#jsnis-no-theme p {
+	margin: 0;
+}
+#jsnis-no-theme .jsnis-theme-message {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 35px;
+}
+#jsnis-no-theme .jsnis-theme-download-link {
+	font-size: 16px;
+}
+#jsnis-no-theme .jsnis-theme-download-link a {
+	color: #0B54C4;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#jsnis-no-theme .jsnis-theme-download-link a:hover {
+	text-decoration: none;
+}
+#jsnis-no-theme .jsnis-theme-install {
+	padding: 54px 0;
+}
+#jsnis-no-theme .jsnis-theme-install-link {
+	background: #FFF url(../images/icon-theme-empty.png) center 25px no-repeat;
+    display: inline-block;
+    font-size: 22px;
+	margin: 0 10px;
+    font-weight: bold;
+	color: #999;
+	padding: 87px 27px 27px 27px;
+	text-decoration: none;
+	border: 1px solid #CCC;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	vertical-align: text-bottom;
+}
+#jsnis-no-theme #jsnis-showcase-list-theme .jsnis-theme-container {
+	margin: 0 20px;
+	padding: 10px;
+	background-color: #fff;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #CCC;
+	display: inline-block;
+	vertical-align: sub;
+}
+#jsnis-no-theme #jsnis-showcase-list-theme .jsnis-theme-container:hover {
+	border-color: #FFF;
+	-moz-box-shadow: 0 0 8px #333333;
+	-webkit-box-shadow: 0 0 8px #333333;
+}
+#jsnis-install-theme h3 {
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* ============================== CONFIGURATION & MAINTENANCE ============================== */
+#jsn-imageshow-configuration-maintenance {
+	border: 1px solid #CCC;
+	font-size: 12px;
+	overflow: hidden;
+}
+#jsn-imageshow-configuration-maintenance,
+#jsn-imageshow-configuration-maintenance_inner,
+#jsn-imageshow-configuration-maintenance_inner1 {
+	position: relative;
+	width: 100%;
+}
+#jsn-imageshow-configuration-maintenance_inner {
+	right: 73%;
+	background: #F6F6F6 url(../images/backgrounds/bg-main-navigation.png) right top repeat-y;
+}
+#jsn-imageshow-configuration-maintenance_inner1 {
+	left: 73%;
+}
+#jsnis-main-content-container {
+	float: left;
+	width: 73%;
+	background-color: #FFF;
+}
+#jsnis-main-content {
+	padding: 15px;
+}
+#jsnis-main-content div.jsnis-button {
+	text-align: center;
+	margin: 15px 0 10px 0;
+}
+#jsnis-main-content .item-title {
+	color: #666;
+	font-weight: bold;
+}
+.jsnis-button button {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 10px;
+}
+/* =============== CONFIGURATION & MAINTENANCE - MAIN NAVIGATION =============== */
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation {
+	float: left;
+	width: 27%;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation h3.jsn-pane-toggler-down {
+	font-size: 14px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	padding: 5px 7px;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item {
+	margin: 10px 0;
+	list-style-type: none;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item li {
+	margin: 0;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item #jsnis-active-item {
+	background-color:#FFF;
+	border-top: 1px solid #D4D4D4;
+	border-bottom: 1px solid #D4D4D4;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item li a {
+	color: #797B7F;
+	font-weight: bold;
+	display: block;
+	padding: 6px 8px;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item li a:hover {
+	color: #000000;
+	text-decoration: none;
+	background-color: #E4E4E4;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item #jsnis-active-item a {
+	color: #000;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item #jsnis-active-item a:hover {
+	background-color: #FFF;
+}
+#jsn-imageshow-configuration-maintenance #jsnis-main-navigation ul.jsnis-navigation-item li a span {
+	display: block;
+	padding-left: 40px;
+	line-height: 30px;
+	background-image: url(../images/icons-uni-32.png);
+	background-repeat: no-repeat;
+}
+.icon-configs {
+	background-position: 0 0;
+}
+.icon-msgs {
+	background-position: 0 -30px;
+}
+.icon-langs {
+	background-position: 0 -60px;
+}
+.icon-sampledata {
+	background-position: 0 -90px;
+}
+.icon-backup {
+	background-position: 0 -120px;
+}
+.icon-profile {
+	background-position: 0 -150px;
+}
+.icon-themes {
+	background-position: 0 -180px;
+}
+#jsnis-active-item .icon-configs {
+	background-position: 0 -210px;
+}
+#jsnis-active-item .icon-msgs {
+	background-position: 0 -240px;
+}
+#jsnis-active-item .icon-langs {
+	background-position: 0 -270px;
+}
+#jsnis-active-item .icon-sampledata {
+	background-position: 0 -300px;
+}
+#jsnis-active-item .icon-backup {
+	background-position: 0 -330px;
+}
+#jsnis-active-item .icon-profile {
+	background-position: 0 -360px;
+}
+#jsnis-active-item .icon-themes {
+	background-position: 0 -390px;
+}
+/* =============== CONFIGURATION - GLOBAL PARAMETERS =============== */
+#jsnis-configuration {
+	margin: 30px auto;
+	width: 550px;
+}
+#jsnis-configuration form table {
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}
+/* =============== CONFIGURATION - MESSAGES =============== */
+#jsnis-messages div.jsnis-message-refresh {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#jsnis-messages div.jsnis-message-refresh span {
+	float: right;
+}
+/* =============== CONFIGURATION - LANGUAGES =============== */
+#jsnis-languages {
+	width: 550px;
+	margin: 30px auto 0 auto;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+}
+#jsnis-languages .jsnis-language-item {
+	background: url(../images/icon-uni-24/icons-flag-24.png) 5px -138px no-repeat;
+	padding: 3px 0 3px 40px;
+	height: 45px;
+}
+#jsnis-languages .jsnis-language-item label {
+	margin: 0;
+	display: block;
+}
+#jsnis-languages div.en-GB {
+	background-position: 5px 10px;
+}
+#jsnis-languages div.de-DE {
+	background-position: 5px -64px;
+}
+#jsnis-languages .ins-lang-error {
+	color: #CC0000;
+}
+#jsnis-languages .ins-lang-installed {
+	color: #339900;
+}
+#jsnis-languages .link-translate-lang {
+	text-decoration: underline;
+}
+/* =============== MAINTENANCE - SAMPLE DATA INSTALLATION =============== */
+#jsnis-sample-data {
+	margin-top: 15px;
+}
+#jsnis-sample-data .text-alert {
+	width: 620px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+#jsnis-sample-data .text-alert ul {
+	margin: 3px 0;
+	padding-left: 25px;
+}
+#jsnis-sample-data .text-alert ul li {
+	margin: 3px 0;
+}
+#jsnis-sample-data #jsnis-sample-data-install {
+	margin: 2em auto 0 auto;
+	padding: 5px 20px 10px;
+	width: 650px;
+	border: 1px solid #CCC;
+}
+#jsnis-sample-data #jsnis-sample-data-install #jsn-install-download-file {
+	display: inline-block;
+}
+#jsnis-sample-data #jsnis-sample-data-install h3 {
+	margin: 0.8em 0 0.6em;
+}
+#jsnis-sample-data #jsnis-sample-data-install p {
+	font-size: 13px;
+	margin: 0.6em 0;
+}
+/* =============== MAINTENANCE - DATA BACKUP / RESTORE =============== */
+#jsn-data-maintenance {
+	width: 550px;
+	margin: 30px auto;
+}
+#jsn-data-maintenance input {
+	margin: 0;
+	float: none;
+}
+#jsn-data-maintenance dl {
+	margin: 0 0 -1px 0;
+}
+#jsn-data-maintenance dl dt {
+	margin-bottom: 0;
+}
+#jsn-data-maintenance dl dt.open {
+	background-color: #FFF;
+	border-bottom-color: #FFF;
+}
+#jsn-data-maintenance #jsnis-data-backup p {
+	margin: 5px 0;
+}
+#jsn-data-maintenance #jsnis-data-backup p label {
+	position: relative;
+	top: -2px;
+	padding-left: 5px;
+	margin: 0;
+}
+#jsn-data-maintenance #jsnis-data-backup p #filename {
+	width: 100%;
+	margin: 5px 0;
+}
+/* =============== MAINTENANCE - IMAGE SOURCE PROFILE =============== */
+.actionprofile a {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.action-delete {
+	background: url(../images/icon-uni-16/icon-trash-trans.png) no-repeat;
+}
+.action-delete:hover {
+	background: url(../images/icon-uni-16/icon-trash.png) no-repeat;
+}
+.action-edit {
+	background: url(../images/icon-uni-16/icon-pencil-trans.png) no-repeat;
+}
+.action-edit:hover {
+	background: url(../images/icon-uni-16/icon-pencil.png) no-repeat;
+}
+/* ----- MAINTENANCE - IMAGE SOURCE PROFILE - DETAILS ----- */
+#jsnis-image-source-profile-details {
+	font-size: 12px;
+	line-height: 1.5;
+}
+#jsnis-image-source-profile-details ul {
+	padding-left: 15px;
+	margin: 6px 0 6px 5px;
+}
+#jsnis-image-source-profile-details h3.jsnis-element-heading {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #CCC;
+}
+#jsnis-image-source-profile-details div.button {
+	margin-top: 14px;
+}
+/* =============== MAINTENANCE - THEMES MANAGER =============== */
+#jsnis-themes-manager table.adminform tr th,
+#jsnis-themes-manager table.adminform tr td {
+	font-size: 12px;
+	color: #666;
+}
+#jsnis-themes-manager table.adminform tr td {
+	padding: 0 10px 5px 10px;
+}
+#jsnis-themes-manager table.adminform tr th {
+	padding: 5px 10px;
+}
+#jsn-system-message {
+	color: #464646;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #EFE7B8;
+	border: 2px solid #F0DC7E;
+	text-align: center;
+}
+#jsn-system-red-message {
+	margin-bottom:10px;
+	background-color: #E6C0C0;
+	border-bottom: 3px solid #DE7A7B;
+	border-top: 3px solid #DE7A7B;
+	color: #CC0000;
+	padding: 10px 0;
+	font-size: 12px;
+	position: relative;
+	font-weight:bold;
+}
+#system-message dd.notice ul {
+	background-position: 4px center;
+}
+#jsn-system-message span.jsn-span-delete-messages {
+	float: right;
+}
+#jsn-system-message span.jsn-span-title-messages {
+	font-size: 14px;
+}
+#jsn-system-message span.jsn-span-delete-messages a.jsn-link-delete-messages {
+	background: url(../images/icon-uni-24/icon-close-message.png) center center no-repeat;
+	width: 24px;
+	height: 24px;
+	display: block;
+}
+.jsn-loading-bg {
+	height: 100%;
+	width: 100%;
+	background: #fff url(../images/ajax-loader-m.gif) center center no-repeat;
+}
+/* ============================== HELP & SUPPORT ============================== */
+#jsn-imageshow-help {
+	font-size: 12px;
+	color: #666;
+}
+#jsn-imageshow-help .jsn-column {
+	float: left;
+	width: 33.3%;
+}
+#jsn-imageshow-help div.padding {
+	padding: 0 8px;
+}
+#jsn-imageshow-help div.first-col div.padding {
+	padding-left: 0;
+}
+#jsn-imageshow-help div.last-col div.padding {
+	padding-right: 0;
+}
+#jsn-imageshow-help .jsnis-dgrey-heading-style {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#jsn-imageshow-help .jsnis-element-heading {
+	font-size: 14px;
+	padding: 5px 7px;
+}
+#jsn-imageshow-help .jsn-help-item {
+	padding: 15px 10px;
+}
+/* ============================== ABOUT ============================== */
+#jsn-imageshow-about {
+	width: 600px;
+	margin: 50px auto;
+	font-size: 12px;
+	color: #666;
+}
+#jsn-imageshow-about h2 {
+	margin: 0;
+	font-size: 20px;
+}
+#jsn-imageshow-about div.jsn-imageshow-details > div {
+	margin-bottom: 1.5em;
+}
+#jsn-imageshow-about div.jsn-imageshow-details h3 {
+	font-size: 18px;
+	margin: 0 0 0.6em 0;
+	padding-top: 1em;
+	color: #000;
+}
+#jsn-imageshow-about div.jsn-imageshow-details h4 {
+	margin: 0 0 0.5em;
+	font-size: 15px;
+}
+#jsn-imageshow-about div.jsn-imageshow-details hr {
+	margin: 0;
+}
+#jsn-imageshow-about div.jsn-imageshow-details ul {
+	margin: 3px 0;
+	padding-left: 25px;
+}
+#jsn-imageshow-about div.jsn-imageshow-details .pro-alert {
+	border-top: 2px solid #FEABAB;
+	border-bottom: 2px solid #FEABAB;
+	background: #FFDFDF url(../images/icon-pro.png) 15px 1.4em no-repeat;
+	padding: 0.5em 1em 0.5em 55px;
+	color: #000000
+}
+#jsn-imageshow-intro {
+	border: 1px solid #CCCCCC;
+	padding: 15px;
+}
+#jsn-imageshow-intro h3 {
+	font-size: 15px;
+}
+#jsn-imageshow-intro table {
+	padding: 0;
+	margin: 0;
+}
+#jsn-imageshow-intro table dl {
+	margin-bottom: 1em;
+}
+#jsn-imageshow-intro table dt {
+	float: left;
+	width: 15%;
+	font-weight: bold;
+	margin: 0;
+	padding: 3px;
+	color: #666;
+}
+#jsn-imageshow-intro table dd {
+	margin-left: 65px;
+	padding: 3px;
+}
+#jsn-imageshow-intro table ul.list-horizontal li {
+	line-height: 33px;
+}
+#jsn-imageshow-intro span.jsn-version-checking {
+	color: #666;
+}
+#jsn-imageshow-intro span.jsn-connection-fail,
+#jsn-imageshow-intro span.jsn-outdated-version {
+	color: #CC0000;
+}
+#jsn-imageshow-intro span.jsn-outdated-version .jsn-template-log {
+	color: #000;
+}
+#jsn-imageshow-intro span.jsn-outdated-version .jsn-newer-version {
+	font-weight: bold;
+}
+#jsn-imageshow-intro span.jsn-latest-version {
+	color: #009900;
+}
+p.jsn-message-upgrade {
+	margin: 0 !important;
+}
+div.jsn-body hr {
+	background-color: #E6E6E6;
+	height: 1px;
+	border: none;
+}
+.icon-twitter {
+	background: url(../images/icon-uni-24/icon-twitter.png) left center no-repeat;
+	display: inline-block;
+	padding-left: 22px;
+}
+/* ============================== INSTALLATION ============================== */
+.jsnis-installation-container {
+	font-size: 12px;
+	width: 615px;
+	margin: 0 auto;
+	padding: 8px;
+	border: 1px solid #D5D5D5;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+.jsnis-installation-step {
+	color: #B9B9B9;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 7px 12px;
+	background: #F9F9F9;
+	border: 1px solid #D5D5D5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-top: 12px;
+}
+.jsnis-installation-step.first {
+	margin-top: 0;
+}
+.jsnis-installation-step.enabled {
+	color: #FFCF40;
+	font-weight: bold;
+	border: 2px solid #333333;
+	text-shadow: 0 1px 3px #333333;
+	-moz-box-shadow: 0 2px 5px 0 #666666;
+	-webkit-box-shadow: 0 2px 5px 0 #666666;
+	background: #6A6A6A url(../images/backgrounds/bg-dgrey-heading.png) left bottom repeat-x;
+	margin-bottom: 12px;
+}
+.jsnis-installation-finish {
+	padding: 0 10px;
+}
+.jsnis-installation-finish table {
+	margin-top: 10px;
+}
+.jsnis-installation-finish table td {
+	padding: 3px;
+}
+.jsnis-installation-finish .jsnis-button {
+	text-align: center;
+	padding: 5px 0 10px 0;
+}
+.jsnis-installation-finish .jsnis-button button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: url(../images/backgrounds/bg-button.png) left center repeat-x;
+    border: 1px solid #999999;
+    font-size: 16px;
+    padding: 3px 25px;
+	cursor: pointer;
+}
+/* =============== INSTALLATION RESULT =============== */
+.jsnis-installation-success {
+	background: url(../images/icon-uni-24/icon-check-success-install.png) left top no-repeat;
+	padding-left: 30px;
+	line-height: 24px;
+}
+.jsnis-installation-failure {
+	background: url(../images/icon-uni-24/icon-check-failure-install.png) left top no-repeat;
+	padding-left: 30px;
+	line-height: 24px;
+	margin-bottom: 0.35em;
+}
+#jsnis-installation-failure-elements {
+	margin: 0 0 0 45px;
+}
+#jsnis-installation-alert {
+	background: url(../images/icon-uni-24/icon-warning.png) left center no-repeat;
+	padding-left: 35px;
+}
+.jsnis-installation-text-success {
+	color: #339900;
+	font-weight: bold;
+}
+.jsnis-installation-error {
+	color: #CC0000;
+	font-weight: bold;
+}
+/*=============================== JSN MENU BUTTON ====================================*/
+#submenu-box {
+	display: none;
+}
+#jsnis-menu {
+	text-align: left;
+	margin: 0 10px 0 0;
+	padding: 1px 5px;
+}
+#jsnis-menu li {
+	list-style-type: none;
+	position: relative;
+	z-index: 1;
+}
+#jsnis-menu li a {
+	padding: 0;
+	border: none;
+	float: none;
+	color: #0B54C4;
+	font-size: 12px;
+}
+#jsnis-menu li a.icon-menu {
+	padding-top: 30px;
+	background: url(../images/icons-uni-32.png) center -420px no-repeat;
+}
+#jsnis-menu li a span {
+	width: auto;
+	height: auto;
+}
+#jsnis-menu li ul {
+	width: 173px;
+    margin: 0;
+    padding: 0;
+	left: -999em;
+    position: absolute;
+	background-color: #F6F6F6;
+	border: 1px solid #CCCCCC;
+}
+#jsnis-menu li:hover ul {
+	left: auto;
+	right: 0;
+}
+#jsnis-menu ul li {
+	margin: 2px 4px;
+}
+#jsnis-menu ul li.first {
+	margin-top: 4px;
+}
+#jsnis-menu ul li.last {
+	margin-bottom: 4px;
+}
+#jsnis-menu ul li.separator {
+	margin-top: 3px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #FFF;
+}
+#jsnis-menu ul li a {
+	color: #666;
+	font-size: 11px;
+	padding: 0 3px;
+	border: 1px solid #F6F6F6;
+}
+#jsnis-menu ul li a.icon-24 {
+	padding: 2px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#jsnis-menu ul li a:hover {
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#jsnis-menu ul li a.icon-24 span {
+	line-height: 24px;
+	padding-left: 28px;
+	background: url(../images/icon-uni-24/icons-menu.png) 0 0 no-repeat;
+}
+#jsnis-menu ul li a.icon-launchpad span {
+	background-position: 0 0;
+}
+#jsnis-menu ul li a.icon-showlist span {
+	background-position: 0 -48px;
+}
+#jsnis-menu ul li a.icon-showcase span {
+	background-position: 0 -24px;
+}
+/* =============== JSNMENU - SUBMENU =============== */
+#jsnis-menu ul li.parent ul {
+	left: -999em;
+	top: 0;
+	right: 4px;
+	margin-right: 4px;
+	width: 24px;
+	border: none;
+	background: none;
+}
+#jsnis-menu ul li.parent:hover ul {
+	left: auto;
+	right: 0;
+}
+#jsnis-menu ul li ul li {
+	margin: 0;
+	display: block;
+}
+#jsnis-menu ul li ul li a {
+	border: none;
+	padding: 0;
+	float: left;
+}
+#jsnis-menu ul li ul li a:hover {
+	padding: 1px 1px 3px 1px;
+}
+#jsnis-menu ul li ul li a.icon-additem span {
+	background-position: 0 -72px;
+	float: left;
+	width: 24px;
+	padding: 0;
+}

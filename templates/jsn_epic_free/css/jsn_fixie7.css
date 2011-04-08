@@ -1,0 +1,32 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2006 - 2010 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+div.jsn-container_grid1,
+div.jsn-container_grid2,
+div.jsn-container_grid3,
+div.jsn-container_grid4,
+div.jsn-container_grid5,
+div.jsn-container_grid6,
+.clearafter {
+	height: 1%;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+ul.menu-treemenu li {
+	height: 1%;
+}
+/* =============== MENU - TOP MENU =============== */
+/* ----- GENERAL ----- */
+ul#base-topmenu,
+#jsn-pos-top div.search {
+	float: none;
+}
+.jsn-modulecontainer_inner,
+.jsn-modulecontent {
+	overflow: hidden;
+}

@@ -1,0 +1,10 @@
+#logo {background-image:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='templates/rolnictwo/images/logo.png'}
+
+.search .inputbox {
+	padding: 6px 1px 0 3px;
+	height: 16px; 
+	}
+#content_in, #content_in-noleft, #content_in-noright, #content_in-noleft-noright {height: 350px;}
+
+

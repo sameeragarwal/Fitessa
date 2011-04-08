@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="jsnimageshow" method="upgrade">
+	<name>Theme Classic</name>
+	<version>1.0.0</version>
+	<creationDate>December 2009</creationDate>
+	<copyright>Copyright (c) 2006 - 2009 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<description>JSN IMAGESHOW SHOWCASE THEME CLASSIC PLUGIN</description>
+	<params>
+	</params>
+	<files>
+		<filename plugin="themeclassic">themeclassic.php</filename>
+		<folder plugin="themeclassic">themeclassic</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_jsnimageshow_themeclassic.ini</language>
+		<language tag="de-DE">de-DE.plg_jsnimageshow_themeclassic.ini</language>
+		<language tag="pl-PL">pl-pl.plg_jsnimageshow_themeclassic.ini</language>
+	</languages>
+</install>

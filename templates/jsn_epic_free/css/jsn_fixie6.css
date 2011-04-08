@@ -1,0 +1,203 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2006 - 2010 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+body {
+	font-size: 12px;
+	overflow: hidden;
+	position: relative;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+pre {
+	width: 100%;
+}
+blockquote {
+	padding-bottom: 30px;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+div.jsn-container_grid1,
+div.jsn-container_grid2,
+div.jsn-container_grid3,
+div.jsn-container_grid4,
+div.jsn-container_grid5,
+div.jsn-container_grid6,
+.clearafter {
+	height: 1%;
+}
+/* =============== LAYOUT - OVERALL PAGE =============== */
+/* ----- STICKLEFT / STICKRIGHT ----- */
+#jsn-pos-stickleft {
+	position: absolute;
+	width: 45px;
+	top: expression(eval(document.compatMode &&
+	document.compatMode=='CSS1Compat') ?
+	documentElement.scrollTop
+	+((documentElement.clientHeight-this.clientHeight)/2 )
+	: document.body.scrollTop
+	+((document.body.clientHeight-this.clientHeight)/2));
+}
+#jsn-pos-stickright {
+	position: absolute;
+	width: 45px;
+	top: expression(eval(document.compatMode &&
+	document.compatMode=='CSS1Compat') ?
+	documentElement.scrollTop
+	+((documentElement.clientHeight-this.clientHeight)/2 )
+	: document.body.scrollTop
+	+((document.body.clientHeight-this.clientHeight)/2));
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	width: 100%;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu {
+	width: 100%;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content,
+#jsn-content_inner,
+#jsn-content_inner1,
+#jsn-content_inner2,
+#jsn-content_inner3,
+#jsn-content_inner4,
+#jsn-content_inner5,
+#jsn-content_inner6,
+#jsn-content_inner7 {
+	width: 100%;
+}
+body.jsn-direction-ltr #jsn-leftsidecontent {
+	z-index: 87;
+}
+#jsn-centercol {
+	overflow: hidden;
+}
+/* =============== LAYOUT - FOOTER AREA =============== */
+#jsn-pos-footer div.jsn-modulecontainer,
+#jsn-pos-bottom div.jsn-modulecontainer {
+	width: 100%;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - LIST STYLES =============== */
+/* ----- ARROW LIST ----- */
+ul.list-arrow.arrow-red,
+ul.list-arrow.arrow-blue,
+ul.list-arrow.arrow-green {
+	height: 1%;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+ul#base-mainmenu li {
+	position: relative;
+}
+ul#base-mainmenu li a span {
+	display: inline;
+}
+ul#base-mainmenu ul li a span {
+	display: block;
+}
+ul#base-mainmenu li span.jsn-menutitle,
+ul#base-mainmenu li span.jsn-menudescription {
+	display: block;
+}
+body.jsn-direction-rtl ul#base-mainmenu li.sfhover ul,
+body.jsn-direction-rtl ul#base-mainmenu li.sfhover ul li.sfhover ul,
+body.jsn-direction-rtl ul#base-mainmenu li.sfhover ul li.sfhover ul li.sfhover ul {
+	right: -2px;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+ul.menu-treemenu {
+	width: 100%;
+}
+ul.menu-treemenu li {
+	height: 1%;
+}
+/* ============================== MODULE STYLES ============================== */
+div.jsn-modulecontainer {
+	background: none;
+	padding: 0;
+}
+div.jsn-modulecontent {
+	width: 100%;
+	overflow: hidden;
+}
+#jsn-pos-top div.jsn-modulecontent {
+	width: auto;
+}
+ul#base-topmenu,
+#jsn-pos-top div.search {
+	float: none;
+}
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+div.box-blue div.jsn-top,
+div.box-yellow div.jsn-top,
+div.box-green div.jsn-top,
+div.box-grey div.jsn-top {
+	margin-left: 15px;
+}
+div.box-blue div.jsn-top_inner,
+div.box-yellow div.jsn-top_inner,
+div.box-green div.jsn-top_inner,
+div.box-grey div.jsn-top_inner {
+	height: 15px;
+	width: 15px;
+	margin-left: -15px;
+}
+div.box-blue div.jsn-middle,
+div.box-yellow div.jsn-middle,
+div.box-green div.jsn-middle,
+div.box-grey div.jsn-middle {
+	padding: 0 15px 0 0;
+	margin-left: 15px;
+}
+div.box-blue div.jsn-middle_inner,
+div.box-yellow div.jsn-middle_inner,
+div.box-green div.jsn-middle_inner,
+div.box-grey div.jsn-middle_inner {
+	padding-left: 15px;
+	margin-left: -15px;
+	padding-bottom: 1px;
+}
+div.box-blue div.jsn-bottom,
+div.box-yellow div.jsn-bottom,
+div.box-green div.jsn-bottom,
+div.box-grey div.jsn-bottom {
+	margin-left: 15px;
+}
+div.box-blue div.jsn-bottom_inner,
+div.box-yellow div.jsn-bottom_inner,
+div.box-green div.jsn-bottom_inner,
+div.box-grey div.jsn-bottom_inner {
+	height: 22px;
+	width: 15px;
+	margin-left: -15px;
+}
+body.jsn-direction-rtl div.box-blue div.jsn-top_inner,
+body.jsn-direction-rtl div.box-yellow div.jsn-top_inner,
+body.jsn-direction-rtl div.box-green div.jsn-top_inner,
+body.jsn-direction-rtl div.box-grey div.jsn-top_inner,
+body.jsn-direction-rtl div.box-blue div.jsn-bottom_inner,
+body.jsn-direction-rtl div.box-yellow div.jsn-bottom_inner,
+body.jsn-direction-rtl div.box-green div.jsn-bottom_inner,
+body.jsn-direction-rtl div.box-grey div.jsn-bottom_inner {
+	float: left;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- ARTICLE TOOLBAR ----- */
+.jsn-article-toolbar {
+	width: 100%;
+}
+/* ----- ARTICLE INFO ----- */
+.modifydate {
+	width: 100%;
+}
+dl#system-message {
+	height: 1%;
+}

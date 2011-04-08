@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - JSN ImageShow</name>
+	<version>2.3.4</version>
+	<creationDate>December 2009</creationDate>
+	<copyright>Copyright (c) 2006 - 2009 - JoomlaShine.com</copyright>
+	<license>GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>http://www.joomlashine.com</authorUrl>
+	<description>JSN IMAGESHOW CONTENT PLUGIN</description>
+	<params>
+	</params>
+	<files>
+		<filename plugin="imageshow">imageshow.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_imageshow.ini</language>
+		<language tag="de-DE">de-DE.plg_content_imageshow.ini</language>
+	</languages>
+</install>

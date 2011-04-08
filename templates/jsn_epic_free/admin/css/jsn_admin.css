@@ -1,0 +1,490 @@
+/**
+* author    JoomlaShine.com http://www.joomlashine.com
+* copyright Copyright (C) 2006 - 2009 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* =============== GENERAL =============== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address {
+	margin-top: 0.35em;
+	margin-bottom: 0.8em;
+}
+ul {
+	padding-left: 25px;
+	margin: 3px 0;
+}
+ul li {
+	margin: 3px 0;
+}
+a:link, a:visited {
+	text-decoration: underline;
+	outline: none;
+	color: #009aca;
+}
+a:hover {
+	text-decoration: none;
+}
+.clearafter:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+.clearbreak {
+	clear: both;
+}
+/* =============== TYPOGRAPHY =============== */
+/* ----- DIGIT NUMBER LIST ----- */
+ul.list-number-digit {
+	list-style: none;
+	padding:0;
+}
+ul.list-number-digit li {
+	position: relative;
+	margin-left: 0;
+	padding: 8px 0 8px 42px;
+}
+ul.list-number-digit li .jsn-listbullet {
+	font-size: 32px;
+	line-height: 100%;
+	text-align: right;
+	font-weight: bold;
+	display: block;
+	width: 32px;
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+ul.list-number-digit.digit-blue li .jsn-listbullet {
+	color: #009aca;
+}
+ul.list-number-digit.digit-green li .jsn-listbullet {
+	color: #429e00;
+}
+ul.list-number-digit.digit-grey li .jsn-listbullet {
+	color: #999999;
+}
+ul.list-number-digit.digit-orange li .jsn-listbullet {
+	color: #e66000;
+}
+ul.list-number-digit.digit-red li .jsn-listbullet {
+	color: #bf0000;
+}
+ul.list-number-digit.digit-violet li .jsn-listbullet {
+	color: #9e0084;
+}
+/* ----- HORIZONTAL LIST ----- */
+ul.list-horizontal {
+	margin: 0;
+	list-style: none;
+}
+ul.list-horizontal li {
+	display: inline;
+	margin: 0 .5em;
+}
+/* ----- NOBULLET LIST ----- */
+ul.list-nobullet {
+	margin: 0;
+	list-style: none;
+}
+ul.list-nobullet li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+/*=============== TEMPLATE DESCRIPTION ==================*/
+.template-description {
+	margin: 6px;font-size: 12px;
+	line-height: 150%;
+	color: #666666;
+}
+.template-overview {
+	border: #DFDFDF 1px solid;
+	padding: 10px;
+	text-align: center;
+}
+.template-overview img.template-thumbnail {}
+.template-overview ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.template-overview li {
+	padding: 3px 0;
+	margin: 0;
+}
+.template-overview table {
+	border: #EFEFEF 1px solid;
+	background-color: #f6f6f6;
+}
+.template-overview th {
+	text-align: left;
+	font-weight: bold;
+	padding: 2px 6px;
+}
+.template-overview td {
+	text-align: left;
+	padding: 2px 6px;
+}
+.template-details > div {
+	margin-bottom: 1.5em;
+}
+.template-details h3 {
+	border-top: 1px solid #d4d4d4;
+	font-size: 18px;
+	margin: 0.6em 0 .6em;
+	padding-top: 1em;
+	color: #000;
+}
+.template-details h4 {
+	margin: 0 0 0.5em;
+	font-size: 14px;
+}
+.template-details .pro-alert {
+	border-top: 2px solid #FEABAB;
+	border-bottom: 2px solid #FEABAB;
+	background: #FFDFDF url(../images/icon-pro.png) 15px 1.4em no-repeat;
+	padding: 0.5em 1em 0.5em 55px;
+	color: #000000
+}
+/* =============== AMDIN TABLE =============== */
+table.admintable {
+	width: 100%;
+}
+/* =============== JSN PANEL =============== */
+div.jsn-pane-sliders div.jsn-panel hr {
+	border-width: 1px 0 0 0;
+	color: #CCC;
+}
+div.jsn-pane-sliders div.jsn-panel h3 {
+	background-color: #F4F4F4;
+	border: 1px solid #DFDFDF;
+	margin: 5px 0 0 0;
+	padding: 6px 2px 6px 8px;
+	font: 11px Verdana, Geneva, sans-serif;
+	font-weight: bold;
+}
+div.jsn-pane-sliders div.jsn-panel h3 span {
+	display: block;
+}
+div.jsn-pane-sliders div.jsn-panel h3 span.pro {
+	background: url(../images/icon-pro.png) right center no-repeat;
+	padding: 1px 0;
+}
+div.jsn-pane-sliders div.jsn-panel h3 span.toggle-arrow {
+	background: url(../images/icons-admin.png) right -1548px no-repeat;
+	padding-right: 20px;
+}
+div.jsn-pane-sliders div.jsn-panel h3.jsn-pane-toggler-down span.toggle-arrow {
+	background-position: right -1634px;
+}
+div.jsn-pane-sliders div.jsn-panel h3.jsn-pane-toggler-down {
+	margin-bottom: 3px;
+	border: 1px solid #000;
+	color: #fff;
+	background: url(../images/bg-params-heading.png) left bottom repeat-x;
+}
+div.jsn-pane-sliders h3.title span.param-icon {
+	background: url(../images/icons-admin.png) no-repeat;
+	padding: 2px 0 2px 25px;
+}
+div.jsn-pane-sliders h3#panel-1 span.param-icon {
+	background-position: left -86px;
+}
+div.jsn-pane-sliders h3#panel-1.jsn-pane-toggler-down span.param-icon {
+	background-position: left 0;
+}
+div.jsn-pane-sliders h3#panel-2 span.param-icon {
+	background-position: left -258px;
+}
+div.jsn-pane-sliders h3#panel-2.jsn-pane-toggler-down span.param-icon {
+	background-position: left -172px;
+}
+div.jsn-pane-sliders h3#panel-3 span.param-icon {
+	background-position: left -430px;
+}
+div.jsn-pane-sliders h3#panel-3.jsn-pane-toggler-down span.param-icon {
+	background-position: left -344px;
+}
+div.jsn-pane-sliders h3#panel-4 span.param-icon {
+	background-position: left -602px;
+}
+div.jsn-pane-sliders h3#panel-4.jsn-pane-toggler-down span.param-icon {
+	background-position: left -516px;
+}
+div.jsn-pane-sliders h3#panel-5 span.param-icon {
+	background-position: left -774px;
+}
+div.jsn-pane-sliders h3#panel-5.jsn-pane-toggler-down span.param-icon {
+	background-position: left -688px;
+}
+div.jsn-pane-sliders h3#panel-6 span.param-icon {
+	background-position: left -946px;
+}
+div.jsn-pane-sliders h3#panel-6.jsn-pane-toggler-down span.param-icon {
+	background-position: left -860px;
+}
+div.jsn-pane-sliders h3#panel-7 span.param-icon {
+	background-position: left -1118px;
+}
+div.jsn-pane-sliders h3#panel-7.jsn-pane-toggler-down span.param-icon {
+	background-position: left -1032px;
+}
+div.jsn-pane-sliders h3#panel-8 span.param-icon {
+	background-position: left -1290px;
+}
+div.jsn-pane-sliders h3#panel-8.jsn-pane-toggler-down span.param-icon {
+	background-position: left -1204px;
+}
+div.jsn-pane-sliders h3#panel-9 span.param-icon {
+	background-position: left -1462px;
+}
+div.jsn-pane-sliders h3#panel-9.jsn-pane-toggler-down span.param-icon {
+	background-position: left -1376px;
+}
+div.jsn-pane-sliders div.jsn-panel h3:hover {
+	cursor: pointer;
+}
+div.jsn-pane-sliders div.jsn-panel div.content {
+	margin-left: -1px;
+}
+/* =============== JSN LABEL =============== */
+div.jsn-label {
+	font-size: 12px;
+	padding: 5px;
+	background-color: #f6f6f6;
+	font-weight: bold;
+}
+
+a.link-action:link,
+a.link-action:visited {
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.link-action:hover {
+	background-color: #0B55C4; 
+	color: #ffffff;
+	text-decoration: none
+}
+#content-pane .jsn-button-select {
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 3px 8px;
+	background: url(../images/bg-button-select.png) left center repeat-x;
+}
+#content-pane .jsn-button-select:hover {
+	text-decoration: none;
+	color: #0B55C4;
+}
+#content-pane .link-disabled {
+	font-weight: bold;
+	color: #999;
+	background: none;
+}
+#content-pane .link-disabled:hover {
+	cursor: default;
+	color: #999;
+}
+/*=============== INSTALL SAMPLE DATA PAGE ==================*/
+#jsn-sampledata #jsn-page {
+	width: 750px;
+	margin: 3em auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+#jsn-sampledata #jsn-page_inner1 {
+	background-color: #eaeaea;
+}
+#jsn-sampledata #jsn-page_inner2 {
+	position: relative;
+	left: -5px;
+	top: -5px;
+	background-color: #ffffff;
+	color: #000;
+	border: 1px solid #9f9f9f;
+	padding: 2em;
+}
+#jsn-sampledata h1 {
+	font-size: 1.6em;
+	margin-top: 0;
+}
+#jsn-sampledata h2 {
+	font-size: 1.3em;
+	margin-bottom: 0.6em;
+}
+#jsn-sampledata h3 {
+	font-size: 1.1em;
+	margin-bottom: 0.6em;
+}
+div#jsn-wrap-installation-content {
+	width: 650px;
+	margin: 2em auto;
+	padding: 5px 20px 10px;
+	border:1px solid #CCC;
+}
+#installSampleDataFrom .jsn-install-admin-info {
+	margin-top: 10px;
+}
+#installSampleDataFrom .jsn-install-admin-info p {
+	margin: 0.6em 0;
+}
+#installSampleDataFrom .jsn-install-admin-info span {
+	float: left;
+	width: 100px;
+}
+#installSampleDataFrom .jsn-install-admin-info #username,
+#installSampleDataFrom .jsn-install-admin-info #password {
+	width: 350px;
+}
+#installSampleDataFrom .jsn-install-admin-check {
+	margin: 15px 0;
+}
+#installSampleDataFrom .jsn-install-admin-check p {
+	position: relative;
+}
+#installSampleDataFrom .jsn-install-admin-check input {
+	position: absolute;
+}
+#installSampleDataFrom .jsn-install-admin-check label {
+	margin-left: 25px;
+	display: block;
+}
+#installSampleDataFrom .jsn-install-admin-navigation {
+	text-align: center;
+}
+#jsn-sampledata .text-alert {
+	border-top: 2px solid #FEABAB;
+	border-bottom: 2px solid #FEABAB;
+	background: #FFDFDF url(../../images/icons/icon-text-alert.png) left center no-repeat;
+	padding: 0.6em 0.8em 0.6em 4.8em;
+}
+#jsn-sampledata .text-info {
+	border-top: 2px solid #B7D2F2;
+	border-bottom: 2px solid #B7D2F2;
+	background: #DBE7F8 url(../../images/icons/icon-text-info.png) left center no-repeat;
+	padding: 0.6em 0.8em 0.6em 4.8em;
+}
+#jsn-sampledata .text-alert em {
+	font-weight: bold;
+}
+#jsn-sampledata button.action-submit {
+	padding: 3px 10px;
+	font-weight: bold;
+}
+#jsn-sampledata .action-cancel {
+	display: inline-block;
+	padding: 5px;
+}
+#jsn-sampledata-error-message {
+	margin-bottom:10px;
+	background-color: #E6C0C0;
+	border-bottom: 3px solid #DE7A7B;
+	border-top: 3px solid #DE7A7B;
+	color: #CC0000;
+	font-size: 12px;
+	position: relative;
+	font-weight:bold;	
+}
+span#jsn-sampledata-success-message{
+	color:#339900;	
+}
+/*=============== JSN ICON SELECTOR ==================*/
+.jsn-icon-selector-container { 
+	position: absolute;
+	left: -999px; 
+	background-color: #D4D4D4;
+	margin-top: 20px;
+	margin: 25px 0 0 3px;
+}
+.jsn-icon-selector-container .jsn-icon-selector-holder { 
+	border: 1px solid #666666;
+	width: 320px;
+	position: relative;
+	bottom: 3px;
+	right: 3px;
+}
+.jsn-icon-selector-container .normal { 
+	height: 250px; 
+	background: #FFF url(../images/admin/icon-loading.gif) center center no-repeat;
+}
+.jsn-icon-selector-container .no-flash { 
+	height: 125px; 
+	background-color: #FFF;
+}
+input.jsn-text-read-only {
+	background-color:#ECE9D8;
+}
+.jsn-flash-icon-selector, .jsn-flash-swiff-inner-icon-selector, .jsn-flash-swiff-icon-selector {
+	text-align: center;
+	width:320px;
+	background: #FFF;
+}
+span#jsn-checkresult,
+span#jsn-clearresult {
+	padding: 0 10px;
+	 
+}
+/*=============== JSN ABOUT ==================*/
+.jsn-title {
+	float:left;
+	border-bottom:1px solid #E6E6E6;
+	width:100%;
+	line-height: 1.5;
+}
+div.jsn-panel tr.jsn-product-about {
+	font-size: 12px;
+	line-height: 1.5;
+}
+div.jsn-panel tr.jsn-product-about img {
+	margin: 5px 5px 0 0;
+}
+div.jsn-panel tr.jsn-product-about h2 {
+	color: #0B55C4;
+	font-size: 20px;
+	margin: 0;
+}
+div.jsn-panel tr.jsn-product-about p {
+	color: #000;
+	margin: 0 0 10px 0;
+}
+div.jsn-panel tr.jsn-product-about hr {
+	background-color: #E6E6E6;
+	height: 1px;
+	border: none;
+}
+div.jsn-panel tr.jsn-product-about dl {
+	margin: 0;
+}
+div.jsn-panel tr.jsn-product-about dt {
+	color: #666666;
+	float: left;
+	font-weight: bold;
+	padding: 3px;
+	width: 15%;
+}
+div.jsn-panel tr.jsn-product-about dd {
+	padding: 3px;
+}
+div.jsn-panel tr.jsn-product-about .jsn-outdated-version,
+div.jsn-panel tr.jsn-product-about .jsn-outdated-version .jsn-connection-fail {
+	color: #CC0000;
+}
+div.jsn-panel tr.jsn-product-about .jsn-outdated-version .jsn-newer-version {
+	font-weight: bold;
+}
+div.jsn-panel tr.jsn-product-about .jsn-outdated-version .jsn-template-log {
+	color: #000;
+}
+div.jsn-panel tr.jsn-product-about .jsn-latest-version {
+	color: #009900;
+}
+div.jsn-panel tr.jsn-product-about .jsn-version-checking {
+	color: #666666;
+}
+div.jsn-panel tr.jsn-product-about .jsn-current-version {
+	font-weight: bold;
+	color: #666666;
+}
